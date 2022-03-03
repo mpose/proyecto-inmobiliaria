@@ -1,38 +1,139 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Consultas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consultas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
-    
 
-    <!-- Bootstrap core CSS -->
-<!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
+  </style>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 
-    
-  </head>
-  <body>
-      
-  </body>
-  </html>
+</head>
 
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Sixth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+          aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample06">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="inicio-cliente.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alquileres.html">Alquileres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ventas.html">Ventas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown"
+                aria-expanded="false">Mi Perfil</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                <li><a class="dropdown-item" href="my-perfil.html">Mi Perfil</a></li>
+                <li><a class="dropdown-item" href="reservas-cliente.html">Reservas</a></li>
+                <li><a class="dropdown-item" href="inicio.html">Cerrar Sesion</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Consultas</h1>
+        <p class="lead text-muted">En el siguiente formulario podras realizar la consulta que desees y nos estaremos
+          comunicando a la brevedad.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center container" style="padding-top: 0%;">
+    <div class="row">
+      <div class="col">
+        <form>
+          <input type="text" class="form-control" placeholder="Nombre y apellido">
+          <br>
+          <input type="email" class="form-control" placeholder="Email">
+          <br>
+          <input type="text" class="form-control" placeholder="Teléfono">
+          <br>
+          <textarea placeholder="Mensaje" class="form-control" rows="5" id="exampleFormControlTextarea1"></textarea>
+          <br>
+          <button type="button" class="btn btn-success">Enviar</button>
+        </form>
+      </div>
+      <div class="col">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.2648721214714!2d-57.854967584595684!3d-34.470804357984996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3125c643bceeb%3A0xa03845bec7da536e!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses-419!2suy!4v1646265678089!5m2!1ses-419!2suy"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-muted py-5">
+    <div class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">¿Quienes somos?</h4>
+            <p class="text-muted">Descripcion de la empresa</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <a href="https://instagram.com/vbpropiedadesuy?utm_medium=copy_link">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
+                width="50px">
+            </a>
+
+            <a href="https://www.facebook.com/VB-Propiedades-117550889682355/">
+              <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" width="50px">
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <p class="float-end mb-1">
+        <a href="#">Volver Arriba</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
