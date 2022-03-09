@@ -1,0 +1,24 @@
+{
+    "id": 4,
+    "category": "Venta",
+    "name": "Venta hermosa casa al frente en Sayago",
+    "description": "Ubicada en calle Eduardo Pondal a 2 cuadras de propios. Lindo barrio y tranquilo.",
+    "AdditionalInformation": "Living comedor definido. Un dormitorio amplio con claraboya. Cocina definida con bajo mesada. Baño grande con mueble. Frente de uso exclusivo. Patio para colgar ropa o guardar motos etc, comparte pasada para el apto del fondo. Pisos nuevos en toda la casa. Buena presión de agua.",
+    "guarantee": "Anda, Contaduria.",
+    "cost": 180000,
+    "currency": "USD",
+    "expenses": "No tiene gastos comunes",
+    "images": [
+        "img/Inmueble_4/272833143_668736651230440_7069936522698626608_n.jpg",
+        "img/Inmueble_4/272254812_668736891230416_7491773977142545550_n.jpg",
+        "img/Inmueble_4/272743144_668736981230407_3279751497128629235_n.jpg",
+        "img/Inmueble_4/272672244_668737194563719_2096846363006983246_n.jpg",
+        "img/Inmueble_1/272460716_668737011230404_1977061535580727957_n.jpg",
+        "img/Inmueble_1/272609548_668737051230400_7637827781427063339_n.jpg",
+        "img/Inmueble_1/272439663_668737147897057_3309772400313828996_n.jpg",
+        "img/Inmueble_1/272209546_668736921230413_1098583693345085660_n.jpg",
+        "img/Inmueble_1/271944113_668736957897076_5801029978060735130_n.jpg",
+        "img/Inmueble_1/272260681_668737067897065_6234908865328967127_n.jpg",
+        "img/Inmueble_1/272195223_668737114563727_4123752464208691936_n.jpg"
+    ]
+}
