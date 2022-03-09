@@ -1,0 +1,27 @@
+{
+    "id": 1,
+    "category": "Alquiler",
+    "name": "Hermoso apartamento en Alquiler Parque Rodó",
+    "description": "Edificio Jackson. Primer piso al frente muy luminoso, seguro y tranquilo. Ubicado en calle Jackson a 2 cuadra de la rambla, cerca de facultades.2 dormitorios grandes con placares, 2 baños principal y servicio, cocina grande con aéreos y bajo mesada, Pequeño lavadero al frente, Living comedor grande con vista al frente muy luminoso.",
+    "guarantee": "Deposito BHU, Propiedad, Porto, Sura,  ",
+    "cost": 18500,
+    "currency": "UYU",
+    "expenses": 4000,
+    "images": [
+        "img/Inmueble_1/271929031_670086894428749_8459326828858508430_n.jpg",
+        "img/Inmueble_1/271994974_670086731095432_4105695952898295260_n.jpg",
+        "img/Inmueble_1/272086081_670086951095410_5313151655091457164_n.jpg",
+        "img/Inmueble_1/272274068_670086477762124_4370821391490062884_n.jpg",
+        "img/Inmueble_1/272332980_670086631095442_7655744774347978197_n.jpg",
+        "img/Inmueble_1/272396351_670086921095413_1854064199709114850_n.jpg",
+        "img/Inmueble_1/272669796_670086811095424_1032656095148243939_n.jpg",
+        "img/Inmueble_1/272672939_670086774428761_3894679650712007006_n.jpg",
+        "img/Inmueble_1/272690864_670086874428751_6044601417709522667_n.jpg",
+        "img/Inmueble_1/272691001_670086661095439_3794998061649045035_n.jpg",
+        "img/Inmueble_1/272747176_670086674428771_1396437412387656045_n.jpg",
+        "img/Inmueble_1/272789141_670086861095419_2386480873444571137_n.jpg",
+        "img/Inmueble_1/272887794_670086837762088_3817669136356774894_n.jpg",
+        "img/Inmueble_1/272899283_670086747762097_722890644002558083_n.jpg",
+        "img/Inmueble_1/272930023_670086694428769_4107643510059378038_n.jpg"
+    ]
+}

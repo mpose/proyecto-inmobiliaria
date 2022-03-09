@@ -1,0 +1,22 @@
+{
+    "id": 3,
+    "category": "Venta",
+    "name": "Hermoso apartamento en pocitos cocina y baño a nuevo. Ideal estudiantes o parejas. ",
+    "description": "Ubicada sobre calle Prudencio Vázquez y Vega, a media cuadra de Bv.España y una de Bv.Gral.Artigas.",
+    "AdditionalInformation": "1 Dormitorio grande con A/C  3,80x3,80m. Cocina definida aéreos y bajo mesada a nuevo. Baño todo nuevo a estrenar. Living comedor grande con ventanas laterales, medidas: 4,20x3,70m. Son 5 apartamentos por pasillo.Buen ambiente, muy tranquilo y seguro.",
+    "guarantee": "Porto Seguro, Garantia BHU, Sura,  ",
+    "cost": 165000,
+    "currency": "USD",
+    "expenses": 1600,
+    "images": [
+        "img/Inmueble_3/273549360_677042947066477_7771753066111312701_n.jpg",
+        "img/Inmueble_3/273565730_677043067066465_4164931834127019876_n.jpg",
+        "img/Inmueble_3/273454041_677043217066450_6421622839397496060_n.jpg",
+        "img/Inmueble_3/273414344_677043180399787_7536008329667859053_n.jpg",
+        "img/Inmueble_3/273303004_677043153733123_1234254521899408500_n.jpg",
+        "img/Inmueble_3/273203087_677043040399801_2845057705924276636_n.jpg",
+        "img/Inmueble_3/272905829_677043253733113_6555951179120894138_n.jpg",
+        "img/Inmueble_3/272896222_677043113733127_4500527690080923149_n.jpg",
+        "img/Inmueble_3/273573296_677043090399796_5395616296891492159_n.jpg"
+    ]
+}

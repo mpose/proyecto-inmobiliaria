@@ -1,0 +1,22 @@
+{
+    "id": 2,
+    "category": "Alquiler",
+    "name": "Apartamento en alquiler Buceo",
+    "description": "Lindo apartamento 1 dormitorio al frente en muy buena ubicación Propios y Ramón Anador. Tercer piso pos ascensor bajos gastos comunes.",
+    "AdditionalInformation": "1 dormitorio con A/C doble ventana. Baño con termofon  (opcional). Living comedor grande. Cocina con salida a balcón, aéreos y bajo mesada, barra en madera. NO cuenta con cochera. NO se aceptan mascota",
+    "guarantee": "Anda, Aseguradoras, Contaduria",
+    "cost": 15000,
+    "currency": "UYU",
+    "expenses": 2600,
+    "images": [
+        "img/Inmueble_2/272800962_674388400665265_1797480957318024025_n.jpg",
+        "img/Inmueble_2/273033525_674388643998574_6613103532108519260_n.jpg",
+        "img/Inmueble_2/273171362_674388710665234_5196029261377836577_n.jpg",
+        "img/Inmueble_2/268772779_674388920665213_8149016668341983092_n.jpg",
+        "img/Inmueble_2/272859518_674388750665230_6487929112694444675_n.jpg",
+        "img/Inmueble_2/273002877_674388840665221_1972434770211600174_n.jpg",
+        "img/Inmueble_2/273049195_674388800665225_5008477757930504514_n.jpg",
+        "img/Inmueble_2/273205815_674388940665211_6747882710319876987_n.jpg",
+        "img/Inmueble_2/273382180_674388880665217_4813541998297484341_n.jpg"
+    ]
+}
