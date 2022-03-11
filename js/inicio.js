@@ -95,10 +95,10 @@ function mostrarListadoProductos() {
       }
     }
 
-    document.getElementById("listado-inmuebles").innerHTML =
-      htmlContentToAppend;
+    document.getElementById("listado-inmuebles").innerHTML = htmlContentToAppend;
   }
 }
+
 function ordenarYMostrarProductos(sortCriteria, listadoProductos) {
   currentSortCriteria = sortCriteria;
 
