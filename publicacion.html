@@ -80,73 +80,122 @@
     </main>
 
     <form>
-        <div class="container">
-            <!-- <div class="row col-md-4 col-sm-6 col-lg-3"> -->
-                <div class="form-floating mb-3">
-                    <input type="text" name="name" class="form-control" id="floatingName" placeholder="name" autocomplete="off">
-                    <label for="floatingName">Nombre</label>
-                </div>
-                <select class="form-select mb-3" name="category" aria-label="Default select example">
-                    <option selected>Categoria</option>
-                    <option value="1">Venta</option>
-                    <option value="2">Alquiler</option>
-                </select>
-                <select class="form-select mb-3" name="type" aria-label="Default select example">
-                    <option selected>Tipo</option>
-                    <option value="1">Casa</option>
-                    <option value="2">Apartamento</option>
-                </select>
-                <select class="form-select mb-3" name="currency" aria-label="Default select example">
-                    <option selected>Moneda</option>
-                    <option value="1">UYU</option>
-                    <option value="2">USD</option>
-                </select>
-                <div class="form-floating mb-3">
-                    <input type="number" name="cost" class="form-control" id="floatingCost" placeholder="cost" min="0">
-                    <label for="floatingCost">Precio</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="number" name="expenses" class="form-control" id="floatingCost" placeholder="expenses" min="0">
-                    <label for="floatingCost">Gastos Comunes</label>
-                </div>
-                <h5>Garantias</h5>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="0" name="guarantee" id="flexCheckDefault" checked>
-                    <label class="form-check-label" for="flexCheckDefault">No necesita garantía</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="1" name="guarantee" id="flexCheckPorto">
-                    <label class="form-check-label" for="flexCheck">Porto Seguro</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="2" name="guarantee" id="flexCheckAnda">
-                    <label class="form-check-label" for="flexCheck">Anda</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="3" name="guarantee" id="flexCheckSura">
-                    <label class="form-check-label" for="flexCheck">Sura</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="4" name="guarantee" id="flexCheckMapfre">
-                    <label class="form-check-label" for="flexCheck">Mapfre</label>
-                </div>
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" value="5" name="guarantee" id="flexCheckContaduria">
-                    <label class="form-check-label" for="flexCheck">Contaduria</label>
-                </div>
-            <!-- </div> -->
+      <div class="container">
+          <div class="col-md-4 col-sm-6 col-lg-6">
             <div class="form-floating mb-3">
-                <textarea class="form-control" name="description" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 60px"></textarea>
-                <label for="floatingTextarea2">Descripcion</label>
+                <input type="text" name="name" class="form-control" id="floatingName" placeholder="name" autocomplete="off">
+                <label for="floatingName">Nombre</label>
             </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-lg-6">
             <div class="form-floating mb-3">
-                <textarea class="form-control" name="addInformation" placeholder="Leave a comment here" id="floatingAddInformation" style="height: 100px"></textarea>
-                <label for="floatingAddInformation">Informacion Adicional</label>
+              <textarea class="form-control" name="description" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Descripcion</label>
             </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-lg-6">
+            <div class="form-floating mb-3">
+              <textarea class="form-control" name="addInformation" placeholder="Leave a comment here" id="floatingAddInformation" style="height: 200px"></textarea>
+              <label for="floatingAddInformation">Informacion Adicional</label>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-lg-6">
             <div class="input-group mb-3">
-                <input type="file" name="inputFile" class="form-control" id="inputGroupFile01">
+              <input type="file" name="inputFile" class="form-control" id="inputGroupFile01">
             </div>
+          </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-lg-2">
+            <select class="form-select mb-3" name="category" aria-label="Default select example">
+                <option value="0" selected>Categoria</option>
+                <option value="1">Venta</option>
+                <option value="2">Alquiler</option>
+            </select>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-2">
+            <select class="form-select mb-3" name="type" aria-label="Default select example">
+              <option value="0" selected>Tipo</option>
+                <option value="1">Casa</option>
+                <option value="2">Apartamento</option>
+            </select>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-2">
+            <select class="form-select mb-3" name="departament" aria-label="Default select example">
+              <option value="0" selected>Departamento</option>
+              <option value="1">Artigas</option>
+              <option value="2">Canelones</option>
+              <option value="3">Cerro Largo</option>
+              <option value="4">Colonia</option>
+              <option value="5">Durazno</option>
+              <option value="6">Flores</option>
+              <option value="7">Florida</option>
+              <option value="8">Lavalleja</option>
+              <option value="9">Montevideo</option>
+              <option value="10">Maldonado</option>
+              <option value="11">Paysandú</option>
+              <option value="12">Rio Negro</option>
+              <option value="13">Rivera</option>
+              <option value="14">Rocha</option>
+              <option value="15">Salto</option>
+              <option value="16">San José</option>
+              <option value="17">Soriano</option>
+              <option value="18">Tacuarembó</option>
+              <option value="19">Treinta y Tres</option>
+            </select>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-lg-2">
+            <select class="form-select mb-3" name="currency" aria-label="Default select example">
+              <option value="0" selected>Moneda</option>
+              <option value="1">UYU</option>
+              <option value="2">USD</option>
+            </select>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-2">
+            <div class="form-floating mb-3">
+              <input type="number" name="cost" class="form-control" id="floatingCost" placeholder="cost" min="0">
+              <label for="floatingCost">Precio</label>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-2">
+            <div class="form-floating mb-3">
+              <input type="number" name="expenses" class="form-control" id="floatingCost" placeholder="expenses" min="0">
+              <label for="floatingCost">Gastos Comunes</label>
+            </div>
+          </div>
+        </div>
+            <h5>Garantias</h5>
+            <div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="0" name="guarantee" id="flexCheckDefault" checked>
+              <label class="form-check-label" for="flexCheckDefault">No necesita garantía</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="1" name="guarantee" id="flexCheckPorto">
+              <label class="form-check-label" for="flexCheck">Porto Seguro</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="2" name="guarantee" id="flexCheckAnda">
+              <label class="form-check-label" for="flexCheck">Anda</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="3" name="guarantee" id="flexCheckSura">
+              <label class="form-check-label" for="flexCheck">Sura</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="4" name="guarantee" id="flexCheckMapfre">
+              <label class="form-check-label" for="flexCheck">Mapfre</label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="5" name="guarantee" id="flexCheckContaduria">
+              <label class="form-check-label" for="flexCheck">Contaduria</label>
+            </div>
+          </div>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Publicar Inmueble</button>
+      </div>
     </form>
   
     <footer class="text-muted py-5">
