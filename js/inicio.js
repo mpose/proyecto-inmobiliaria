@@ -83,7 +83,8 @@ function mostrarListadoProductos() {
                                 <p class="card-text">` + product.description + `</p> 
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver Más</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="verInfo('` + product.id + `')"
+                                        " >Ver Más</button>
                                     </div>
                                     <small class="text-muted">` + product.currency + product.cost + `</small>
                                 </div>
@@ -174,3 +175,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
     mostrarListadoProductos();
   });
 });
+
+function verInfo(productid){
+
+  localStorage.setItem('inmueble-id' , productid);
+  window.location ='info-inmueble.html';
+  
+}

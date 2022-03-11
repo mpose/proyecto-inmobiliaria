@@ -1,4 +1,5 @@
 const INMUEBLES_URL = "https://mpose.github.io/json_ecommerce/json/inmuebles.json"
+const INMUEBLES_INFO ="https://fpelle24.github.io/JsonsIn"
 
 var showSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "block";
