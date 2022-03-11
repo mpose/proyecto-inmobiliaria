@@ -79,7 +79,7 @@ function mostrarListadoProductos() {
                             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="` + product.images[0] + `"</img>
 
                             <div class="card-body">
-                                <h5 class="card-text">`+ product.name +`</h5>
+                                <h5 class="card-text">`+ product.name + `</h5>
                                 <p class="card-text">` + product.description + `</p> 
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
@@ -138,37 +138,37 @@ document.addEventListener("DOMContentLoaded", function (e) {
   });
 
   document.getElementById("clearRangeFilter").addEventListener("click", function () {
-      document.getElementById("rangeFilterCountMin").value = "";
-      document.getElementById("rangeFilterCountMax").value = "";
-      document.getElementById("buscador").value = "";
+    document.getElementById("rangeFilterCountMin").value = "";
+    document.getElementById("rangeFilterCountMax").value = "";
+    document.getElementById("buscador").value = "";
 
-      minCount = undefined;
-      maxCount = undefined;
-      buscar = undefined;
+    minCount = undefined;
+    maxCount = undefined;
+    buscar = undefined;
 
-      mostrarListadoProductos();
-    });
+    mostrarListadoProductos();
+  });
 
   document.getElementById("rangeFilterCount").addEventListener("click", function () {
-      //Obtengo el mínimo y máximo de los intervalos para filtrar por cantidad
-      //de productos por categoría.
-      minCount = document.getElementById("rangeFilterCountMin").value;
-      maxCount = document.getElementById("rangeFilterCountMax").value;
+    //Obtengo el mínimo y máximo de los intervalos para filtrar por cantidad
+    //de productos por categoría.
+    minCount = document.getElementById("rangeFilterCountMin").value;
+    maxCount = document.getElementById("rangeFilterCountMax").value;
 
-      if (minCount != undefined && minCount != "" && parseInt(minCount) >= 0) {
-        minCount = parseInt(minCount);
-      } else {
-        minCount = undefined;
-      }
+    if (minCount != undefined && minCount != "" && parseInt(minCount) >= 0) {
+      minCount = parseInt(minCount);
+    } else {
+      minCount = undefined;
+    }
 
-      if (maxCount != undefined && maxCount != "" && parseInt(maxCount) >= 0) {
-        maxCount = parseInt(maxCount);
-      } else {
-        maxCount = undefined;
-      }
+    if (maxCount != undefined && maxCount != "" && parseInt(maxCount) >= 0) {
+      maxCount = parseInt(maxCount);
+    } else {
+      maxCount = undefined;
+    }
 
-      mostrarListadoProductos();
-    });
+    mostrarListadoProductos();
+  });
   document.getElementById("buscador").addEventListener("input", function () {
     buscar = document.getElementById("buscador").value.toLowerCase();
 
@@ -176,9 +176,9 @@ document.addEventListener("DOMContentLoaded", function (e) {
   });
 });
 
-function verInfo(productid){
+function verInfo(productid) {
 
-  localStorage.setItem('inmueble-id' , productid);
-  window.location ='info-inmueble.html';
-  
+  localStorage.setItem('inmueble-id', productid);
+  window.location = 'info-inmueble.html';
+
 }

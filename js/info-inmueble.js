@@ -14,18 +14,32 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 function infoInmueble(inmueble) {
 
+    document.getElementById("inmueblenombre").innerHTML = "";
     document.getElementById("infoInmueble").innerHTML = "";
+    document.getElementById("subtitulo").innerHTML = "";
 
     let ininfo = "";
-    
+    let inname = "";
+    let inprecio = "";
+
+
+    inname =  `<p class="inputinmname">${inmueble.name}</p> `
+
+    document.getElementById("inmueblenombre").innerHTML +=inname;
+
+    inprecio = ` <p>${inmueble.currency}`+` ${inmueble.cost}</p>`
+
+    document.getElementById("subtitulo").innerHTML += inprecio;
+
     ininfo =
         `
             <div class="row" >
-                   <div class="col-6">
-                     <h1>${inmueble.name}</h1>
-                     <h2>${inmueble.description}<h2>
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                    <div class="col-6">
+                        <h6 class="inputsinmdescription">${inmueble.description}<h6>
+                    </div>
+                                    
+            <div id="carouselExampleInterval" class="carousel slide d-block w-50 col-6" data-bs-ride="carousel">
+                <div id="carouselinmu" class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="1000">
                         <img src="${inmueble.images[1]}" class="d-block w-100">
                     </div>
@@ -46,7 +60,13 @@ function infoInmueble(inmueble) {
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>`
+              
+            </div>
+
+            
+           
+            
+            `
 
     document.getElementById("infoInmueble").innerHTML += ininfo;
 };
