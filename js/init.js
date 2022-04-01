@@ -1,17 +1,17 @@
 const INMUEBLES_URL = "https://mpose.github.io/json_ecommerce/json/inmuebles.json"
 const INMUEBLES_INFO ="https://fpelle24.github.io/JsonsIn"
 
-/*var showSpinner = function(){
+/* var showSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "block";
 }
 
 var hideSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "none";
-}*/
+} */
 
 var getJSONData = function(url){
     var result = {};
-    //showSpinner();
+    // showSpinner();
     return fetch(url)
     .then(response => {
       if (response.ok) {
@@ -23,13 +23,13 @@ var getJSONData = function(url){
     .then(function(response) {
           result.status = 'ok';
           result.data = response;
-          //hideSpinner();
+          // hideSpinner();
           return result;
     })
     .catch(function(error) {
         result.status = 'error';
         result.data = error;
-        //hideSpinner();
+        // hideSpinner();
         return result;
     });
 }
@@ -39,3 +39,5 @@ var getJSONData = function(url){
 //elementos HTML presentes.
 document.addEventListener("DOMContentLoaded", function(e){
 });
+
+
