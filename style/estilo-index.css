@@ -1,0 +1,26 @@
+.nav-link{
+    color: aliceblue;
+}
+
+#section2{
+    background-color: #FED420;
+}
+
+#inmueblenombre{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 50px;
+    color: darkblue;
+}
+#subtitulo {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: left;
+    color: darkblue;
+}
+
+#infoInmueble{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
