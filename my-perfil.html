@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/estilo-index.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+
+    <title>Mi perfil</title>
+
+    <style>
+      body {
+        background-color: #f8e799;
+      }
+
+      
+    </style>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav
+      class="navbar navbar-expand-xl navbar-light"
+      style="background-color: #1d1dc6"
+      aria-label="Sixth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample06"
+          aria-controls="navbarsExample06"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample06">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                style="color: #fed420"
+                href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #fed420" href="alquileres.html">Alquileres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #fed420" href="ventas.html">Ventas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" style="color: #fed420">Admin</a>
+            </li>
+          </ul>
+
+          <form>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+              id="buscador"
+              />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="card border-dark">
+            <label class="card-header text-black-50" style="font-size:
+              x-large;">Editar
+              perfil</label>
+            <div class="card-body">
+              <form id="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-6 col-md-6 mb-3">
+                    <label for="userName">Nombre</label>
+                    <input type="text" class="form-control" id="userName"
+                      placeholder="Pity" required>
+                    <div class="invalid-feedback">
+                      Por favor, indique su nombre.
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-6 mb-3">
+                    <label for="userSurname">Apellido</label>
+                    <input type="text" class="form-control" id="userSurname"
+                      placeholder="Álvarez" required>
+                    <div class="invalid-feedback">
+                      Por favor, indique su apellido.
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-6 mb-3">
+                    <label for="userAge">Fecha de nacimiento</label>
+                    <div class="input-group">
+                      <input type="date" class="form-control" id="userBirth"
+                        onkeydown="false" required>
+                      <div class="invalid-feedback">
+                        Por favor, indique su nacimiento.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5 col-md-3 mb-3">
+                    <label for="userAge">Edad</label>
+                    <div class="input-group">
+                      <input type="number" class="form-control inputN-no-i"
+                        id="userAge" min="1" required>
+                      <div class="invalid-feedback">
+                        Por favor, indique su edad.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-7 col-md-6 mb-3">
+                    <label for="userEmail">Correo electrónico</label>
+                    <input type="email" class="form-control" id="userEmail"
+                      placeholder="ejemplo@email.com"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                      required>
+                    <div id="alert"></div>
+                    <div class="invalid-feedback">
+                      Correo electrónico inválido.
+                    </div>
+                  </div>
+                  <div class="col-5 col-md-6 mb-3">
+                    <label for="userPhone">Teléfono/Celular</label>
+                    <input type="number" class="form-control inputN-no-i"
+                      id="userPhone"
+                      placeholder="091 234 567" required>
+                    <div class="invalid-feedback">
+                      Número de teléfono inválido.
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="text-left">
+                  <button class="btn btn-success w-25" id="save" type="submit">Guardar</button>
+                  <button class="btn btn-secondary w-25" id="remove"
+                    type="button">Eliminar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class="text-muted mt-auto">
+      <div style="background-color: #1d1dc6;">
+        <div>
+          <div class="row p-3">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">¿Quienes somos?</h4>
+              <p class="text-muted">Descripcion de la empresa</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <div class="row">
+                <div class="col">
+                  <a
+                    href="https://instagram.com/vbpropiedadesuy?utm_medium=copy_link"
+                    style="margin-right: 2ch; color: black;">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png"
+                      width="55px">
+                  </a>
+                  <a
+                    href="https://www.facebook.com/VB-Propiedades-117550889682355/">
+                    <img
+                      src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png"
+                      width="50px">
+                  </a>
+                  <a href="conultas.html" class="text-white">Consultas</a>
+                </div>
+              </div>
+            </div>
+
+            <p class="float-end mb-1">
+              <a href="#">Volver Arriba</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

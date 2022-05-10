@@ -24,3 +24,11 @@
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.bg-gray {
+    background-color: #fcf9f9af;
+}
+
+.borde {
+    border: 1px solid black;
+}
