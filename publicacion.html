@@ -36,204 +36,229 @@
 
   <header>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Sixth navbar example">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExample06">
-            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="inicio-administrador.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="alquileres.html">Alquileres</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ventas.html">Ventas</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">Mi Perfil</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown06">
-                  <li><a class="dropdown-item" href="my-perfil.html">Mi Perfil</a></li>
-                  <li><a class="dropdown-item" href="publicacion.html">Publicar</a></li>
-                  <li><a class="dropdown-item" href="index.html">Cerrar Sesion</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form>
-              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-            </form>
-          </div>
-        </div>
-      </nav>
-  </header>
-  
-    <main>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+          aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Nueva publicacion</h1>
-            <p class="lead text-muted">Completa el formulario para agregar un nuevo inmueble</p>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarsExample06">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="inicio-administrador.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alquileres.html">Alquileres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ventas.html">Ventas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown"
+                aria-expanded="false">Mi Perfil</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                <li><a class="dropdown-item" href="my-perfil.html">Mi Perfil</a></li>
+                <li><a class="dropdown-item" href="publicacion.html">Publicar</a></li>
+                <li><a class="dropdown-item" href="index.html">Cerrar Sesion</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
         </div>
       </div>
-  
-    </main>
+    </nav>
+  </header>
 
-    <form>
-      <div class="container">
-          <div class="col-md-4 col-sm-6 col-lg-6">
-            <div class="form-floating mb-3">
-                <input type="text" name="name" class="form-control" id="floatingName" placeholder="name" autocomplete="off">
-                <label for="floatingName">Nombre</label>
+  <main>
+
+    <div class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Nueva publicacion</h1>
+          <p class="lead text-muted">Completa el formulario para agregar un nuevo inmueble</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <div class="container">
+    <form class="border p-3 form">
+      <div>
+        <div class="col-md-12 col-sm-12 col-lg-12">
+          <div class="form-floating mb-3">
+            <input type="text" name="name" class="form-control" id="floatingName" placeholder="name" autocomplete="off">
+            <label for="floatingName">Nombre</label>
+          </div>
+        </div>
+        <div class="row col-lg-12">
+          <div class="col-lg-6">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="form-floating mb-3">
+                <textarea class="form-control" name="description" placeholder="Leave a comment here"
+                  id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Descripcion</label>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="form-floating mb-3">
+                <textarea class="form-control" name="addInformation" placeholder="Leave a comment here"
+                  id="floatingAddInformation" style="height: 235px"></textarea>
+                <label for="floatingAddInformation">Informacion Adicional</label>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-lg-6">
-            <div class="form-floating mb-3">
-              <textarea class="form-control" name="description" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Descripcion</label>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-lg-6">
-            <div class="form-floating mb-3">
-              <textarea class="form-control" name="addInformation" placeholder="Leave a comment here" id="floatingAddInformation" style="height: 200px"></textarea>
-              <label for="floatingAddInformation">Informacion Adicional</label>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-lg-6">
-            <div class="input-group mb-3">
-              <input type="file" name="inputFile" class="form-control" id="inputGroupFile01">
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-lg-2">
-            <select class="form-select mb-3" name="category" aria-label="Default select example">
+          <div class="col-md-6 col-lg-3">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <select class="form-select mb-3" name="category" aria-label="Default select example">
                 <option value="0" selected>Categoria</option>
                 <option value="1">Venta</option>
                 <option value="2">Alquiler</option>
-            </select>
-          </div>
-          <div class="col-md-3 col-sm-6 col-lg-2">
-            <select class="form-select mb-3" name="type" aria-label="Default select example">
-              <option value="0" selected>Tipo</option>
+              </select>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <select class="form-select mb-3" name="type" aria-label="Default select example">
+                <option value="0" selected>Tipo</option>
                 <option value="1">Casa</option>
                 <option value="2">Apartamento</option>
-            </select>
+              </select>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <select class="form-select mb-3" name="departament" aria-label="Default select example">
+                <option value="0" selected>Departamento</option>
+                <option value="1">Artigas</option>
+                <option value="2">Canelones</option>
+                <option value="3">Cerro Largo</option>
+                <option value="4">Colonia</option>
+                <option value="5">Durazno</option>
+                <option value="6">Flores</option>
+                <option value="7">Florida</option>
+                <option value="8">Lavalleja</option>
+                <option value="9">Montevideo</option>
+                <option value="10">Maldonado</option>
+                <option value="11">Paysandú</option>
+                <option value="12">Rio Negro</option>
+                <option value="13">Rivera</option>
+                <option value="14">Rocha</option>
+                <option value="15">Salto</option>
+                <option value="16">San José</option>
+                <option value="17">Soriano</option>
+                <option value="18">Tacuarembó</option>
+                <option value="19">Treinta y Tres</option>
+              </select>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <select class="form-select mb-3" name="currency" aria-label="Default select example">
+                <option value="0" selected>Moneda</option>
+                <option value="1">UYU</option>
+                <option value="2">USD</option>
+              </select>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="form-floating mb-3">
+                <input type="number" name="cost" class="form-control" id="floatingCost" placeholder="cost" min="0">
+                <label for="floatingCost">Precio</label>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="form-floating mb-3">
+                <input type="number" name="expenses" class="form-control" id="floatingCost" placeholder="expenses"
+                  min="0">
+                <label for="floatingCost">Gastos Comunes</label>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-lg-2">
-            <select class="form-select mb-3" name="departament" aria-label="Default select example">
-              <option value="0" selected>Departamento</option>
-              <option value="1">Artigas</option>
-              <option value="2">Canelones</option>
-              <option value="3">Cerro Largo</option>
-              <option value="4">Colonia</option>
-              <option value="5">Durazno</option>
-              <option value="6">Flores</option>
-              <option value="7">Florida</option>
-              <option value="8">Lavalleja</option>
-              <option value="9">Montevideo</option>
-              <option value="10">Maldonado</option>
-              <option value="11">Paysandú</option>
-              <option value="12">Rio Negro</option>
-              <option value="13">Rivera</option>
-              <option value="14">Rocha</option>
-              <option value="15">Salto</option>
-              <option value="16">San José</option>
-              <option value="17">Soriano</option>
-              <option value="18">Tacuarembó</option>
-              <option value="19">Treinta y Tres</option>
-            </select>
+          <div class="col-md-6 col-lg-3">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <h5>Garantias</h5>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="0" name="guarantee" id="flexCheckDefault"
+                  checked>
+                <label class="form-check-label" for="flexCheckDefault">No necesita garantía</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="1" name="guarantee" id="flexCheckPorto">
+                <label class="form-check-label" for="flexCheck">Porto Seguro</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="2" name="guarantee" id="flexCheckAnda">
+                <label class="form-check-label" for="flexCheck">Anda</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="3" name="guarantee" id="flexCheckSura">
+                <label class="form-check-label" for="flexCheck">Sura</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="4" name="guarantee" id="flexCheckMapfre">
+                <label class="form-check-label" for="flexCheck">Mapfre</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="5" name="guarantee" id="flexCheckContaduria">
+                <label class="form-check-label" for="flexCheck">Contaduria</label>
+              </div>
+            </div>
+          </div>
+          <div>
+          <div class="col-md-12 col-sm-12 col-lg-12">
+            <div class="mb-3">
+              <div id="multi-selector-uniq">
+                <!-- El input para seleccionar los archivos, fíjate en su id -->
+                <input type="file" name="inputFile" class="form-control mb-1" id="files" accept="image/*" multiple>
+                <!-- La imagen que vamos a usar para previsualizar lo que el usuario selecciona -->
+                <h6>Archivos seleccionados:</h6>
+                <ul id="preview"></ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-lg-2">
-            <select class="form-select mb-3" name="currency" aria-label="Default select example">
-              <option value="0" selected>Moneda</option>
-              <option value="1">UYU</option>
-              <option value="2">USD</option>
-            </select>
-          </div>
-          <div class="col-md-3 col-sm-6 col-lg-2">
-            <div class="form-floating mb-3">
-              <input type="number" name="cost" class="form-control" id="floatingCost" placeholder="cost" min="0">
-              <label for="floatingCost">Precio</label>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-lg-2">
-            <div class="form-floating mb-3">
-              <input type="number" name="expenses" class="form-control" id="floatingCost" placeholder="expenses" min="0">
-              <label for="floatingCost">Gastos Comunes</label>
-            </div>
-          </div>
         </div>
-            <h5>Garantias</h5>
-            <div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="0" name="guarantee" id="flexCheckDefault" checked>
-              <label class="form-check-label" for="flexCheckDefault">No necesita garantía</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="1" name="guarantee" id="flexCheckPorto">
-              <label class="form-check-label" for="flexCheck">Porto Seguro</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="2" name="guarantee" id="flexCheckAnda">
-              <label class="form-check-label" for="flexCheck">Anda</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="3" name="guarantee" id="flexCheckSura">
-              <label class="form-check-label" for="flexCheck">Sura</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="4" name="guarantee" id="flexCheckMapfre">
-              <label class="form-check-label" for="flexCheck">Mapfre</label>
-            </div>
-            <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" value="5" name="guarantee" id="flexCheckContaduria">
-              <label class="form-check-label" for="flexCheck">Contaduria</label>
-            </div>
-          </div>
-      </div>
-      <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button">Publicar Inmueble</button>
       </div>
     </form>
-  
-    <footer class="text-muted py-5">
-      <div class="bg-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">¿Quienes somos?</h4>
-              <p class="text-muted">Descripcion de la empresa</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contacto</h4>
-              <ul class="list-unstyled">
-                <li><a href="https://instagram.com/vbpropiedadesuy?utm_medium=copy_link" class="text-white">Siguenos en
-                    Instagram</a></li>
-                <li><a href="https://www.facebook.com/VB-Propiedades-117550889682355/" class="text-white">Visitanos en
-                    Facebook</a></li>
-                <li><a href="conultas.html" class="text-white">Consultas</a></li>
-              </ul>
-            </div>
+  </div>
+  <div class="container">
+    
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="button">Publicar Inmueble</button>
+    </div>
+  </div>
+
+  <footer class="text-muted py-5">
+    <div class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">¿Quienes somos?</h4>
+            <p class="text-muted">Descripcion de la empresa</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contacto</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://instagram.com/vbpropiedadesuy?utm_medium=copy_link" class="text-white">Siguenos en
+                  Instagram</a></li>
+              <li><a href="https://www.facebook.com/VB-Propiedades-117550889682355/" class="text-white">Visitanos en
+                  Facebook</a></li>
+              <li><a href="conultas.html" class="text-white">Consultas</a></li>
+            </ul>
           </div>
         </div>
-  
-        <p class="float-end mb-1">
-          <a href="#">Volver Arriba</a>
-        </p>
       </div>
-    </footer>
-  
-  
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/inicio.js"></script>
-  
-  
-  </body>
-  </html>
+
+      <p class="float-end mb-1">
+        <a href="#">Volver Arriba</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/publicacion.js"></script>
+
+
+</body>
+
+</html>
