@@ -62,6 +62,8 @@ function mostrarListadoProductos() {
   let htmlContentToAppend = "";
   for (let i = 0; i < currentListadoProductos.length; i++) {
     let product = currentListadoProductos[i];
+    let stringDescription = product.description
+    let stringName = product.name
 
     if (
       (minCount == undefined ||
@@ -72,7 +74,17 @@ function mostrarListadoProductos() {
       if (
         buscar == undefined ||
         product.name.toLowerCase().indexOf(buscar) != -1
-      ) {
+      ) 
+      if (product.name.length >= 80) {
+        product.name = stringName.substring (0,80) + "...";
+      }
+      /* if (product.name.length < 80) {
+        product.name = stringName + ;
+      } */
+      
+      if (product.description.length >= 80) {
+        product.description = stringDescription.substring (0,75) + "...";
+      } {
         htmlContentToAppend += `
                     <div class="col">
                         <div class="card shadow-sm">
