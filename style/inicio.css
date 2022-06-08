@@ -1,0 +1,17 @@
+.portada {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+p.portada {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.alinear {
+    align-self: flex-end;
+}
+body {
+    background-color: #F8F9FA;
+}
+.icons {
+    font-size: 16px;
+}

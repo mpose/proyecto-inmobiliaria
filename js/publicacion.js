@@ -80,7 +80,7 @@ function renderPreviews(currentFileList, target, inputFile) {
         myLi.addEventListener("drop", eventDrop);
         myLi.addEventListener("dragover", eventDragOver);
         const myButtonRemove = document.createElement("button");
-        myButtonRemove.textContent = "Quitar";
+        myButtonRemove.textContent = "X";
         myButtonRemove.className = "btn btn-secondary btn-sm mb-1";
         myButtonRemove.addEventListener("click", () => {
             filesList = deleteArrayElementByIndex(currentFileList, index);

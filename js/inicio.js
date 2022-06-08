@@ -5,7 +5,10 @@ var currentListadoProductos = [];
 var currentSortCriteria = undefined;
 var minCount = undefined;
 var maxCount = undefined;
+var selectCurrency = 0;
 var buscar = undefined;
+const currencyPesos = "UYU";
+const currencyDolar = "USD";
 
 function sortProductos(criteria, array) {
   let result = [];
@@ -64,38 +67,43 @@ function mostrarListadoProductos() {
     let product = currentListadoProductos[i];
     let stringDescription = product.description
     let stringName = product.name
+    let currencyPesos = "UYU"
+    let currencyDolar = "USD"
 
-    if (
-      (minCount == undefined ||
+    if (selectCurrency === 1) {
+      selectCurrency = currencyPesos;
+    } 
+    if (selectCurrency === 2) {
+      selectCurrency = currencyDolar;
+    }
+
+    if ((minCount == undefined ||
         (minCount != undefined && parseInt(product.cost) >= minCount)) &&
       (maxCount == undefined ||
         (maxCount != undefined && parseInt(product.cost) <= maxCount))
-    ) {
+        
+    ){
       if (
         buscar == undefined ||
         product.name.toLowerCase().indexOf(buscar) != -1
       ) 
       if (product.name.length >= 80) {
         product.name = stringName.substring (0,80) + "...";
-      }
-      /* if (product.name.length < 80) {
-        product.name = stringName + ;
-      } */
-      
+      }      
       if (product.description.length >= 80) {
         product.description = stringDescription.substring (0,75) + "...";
-      } {
+      }{
         htmlContentToAppend += `
-                    <div class="col">
+                    <div class="col-md-4 col-sm-6 col-lg-3">
                         <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="` + product.images[0] + `"</img>
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225px" src="` + product.images[0] + `"</img>
 
                             <div class="card-body">
                                 <h5 class="card-text">`+ product.name + `</h5>
                                 <p class="card-text">` + product.description + `</p> 
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="verInfo('` + product.id + `')"
+                                        <button type="button" class="btn btn-sm btn-info" onclick="verInfo('` + product.id + `')"
                                         " >Ver Más</button>
                                     </div>
                                     <small class="text-muted">` + product.currency + product.cost + `</small>
@@ -145,27 +153,43 @@ document.addEventListener("DOMContentLoaded", function (e) {
     ordenarYMostrarProductos(ORDER_DESC_BY_COST);
   });
 
-  document.getElementById("sortByCount").addEventListener("click", function () {
+  /* document.getElementById("sortByCount").addEventListener("click", function () {
     ordenarYMostrarProductos(ORDER_BY_PROD_COUNT);
-  });
+  }); */
 
   document.getElementById("clearRangeFilter").addEventListener("click", function () {
-    document.getElementById("rangeFilterCountMin").value = "";
-    document.getElementById("rangeFilterCountMax").value = "";
-    document.getElementById("buscador").value = "";
+    document.getElementById("filterMin").value = "";
+    document.getElementById("filterMax").value = "";
+    document.getElementById("filterCategory").value = "0";
+    document.getElementById("filterType").value = "0";
+    document.getElementById("filterDepartament").value = "0";
+    document.getElementById("filterLocation").value = "0";
+    document.getElementById("filterCondition").value = "0";
+    document.getElementById("filterCurrency").value = "0";
+    document.getElementById("filterBedrooms").value = "0";
+    document.getElementById("filterToilets").value = "0";
+    // document.getElementById("buscador").value = "";
 
     minCount = undefined;
     maxCount = undefined;
-    buscar = undefined;
+    // buscar = undefined;
 
     mostrarListadoProductos();
   });
 
-  document.getElementById("rangeFilterCount").addEventListener("click", function () {
+  document.getElementById("apliFilter").addEventListener("click", function () {
     //Obtengo el mínimo y máximo de los intervalos para filtrar por cantidad
     //de productos por categoría.
-    minCount = document.getElementById("rangeFilterCountMin").value;
-    maxCount = document.getElementById("rangeFilterCountMax").value;
+    minCount = document.getElementById("filterMin").value;
+    maxCount = document.getElementById("filterMax").value;
+    selectCategory = document.getElementById("filterCategory").value;
+    selectType = document.getElementById("filterType").value;
+    selectDepartament = document.getElementById("filterDepartament").value;
+    selectLocation = document.getElementById("filterLocation").value;
+    selectCondition = document.getElementById("filterCondition").value;
+    selectCurrency = document.getElementById("filterCurrency").value;
+    selectBedrooms = document.getElementById("filterBedrooms").value;
+    selectToilets = document.getElementById("filterToilets").value;
 
     if (minCount != undefined && minCount != "" && parseInt(minCount) >= 0) {
       minCount = parseInt(minCount);
@@ -178,14 +202,20 @@ document.addEventListener("DOMContentLoaded", function (e) {
     } else {
       maxCount = undefined;
     }
+    if (selectCurrency != 0){
+      selectCurrency = parseInt(selectCurrency);
+    } else {
+      selectCurrency = 0;
+    }
+    
 
     mostrarListadoProductos();
   });
-  document.getElementById("buscador").addEventListener("input", function () {
+ /*  document.getElementById("buscador").addEventListener("input", function () {
     buscar = document.getElementById("buscador").value.toLowerCase();
 
     mostrarListadoProductos();
-  });
+  }); */
 });
 
 function verInfo(productid) {
