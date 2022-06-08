@@ -16,28 +16,18 @@ document.addEventListener("DOMContentLoaded", function (e) {
 function infoInmueble(inmueble) {
 
 
-
-
-
-
-
-    document.getElementById("inmueblenombre").innerHTML = "";
+    document.getElementById("tituloSubtitulo").innerHTML = "";
     document.getElementById("infoInmueble").innerHTML = "";
-    document.getElementById("subtitulo").innerHTML = "";
 
+
+    let tituloySubtitulo = "";
     let ininfo = "";
-    let inname = "";
-    let inprecio = "";
+    
+    tituloySubtitulo = `<div>${inmueble.name}</div> 
+    <div>${inmueble.currency}` + ` ${inmueble.cost}</div> `
     
 
-
-    inname = `<p class="inputinmname">${inmueble.name}</p> `
-
-    document.getElementById("inmueblenombre").innerHTML += inname;
-
-    inprecio = ` <p>${inmueble.currency}` + ` ${inmueble.cost}</p>`
-
-    document.getElementById("subtitulo").innerHTML += inprecio;
+    document.getElementById("tituloSubtitulo").innerHTML += tituloySubtitulo;
 
     
         ininfo =
