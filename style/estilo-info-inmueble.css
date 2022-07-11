@@ -15,7 +15,7 @@ body {
 
 #infoPrincipal {
 
-    height: 8cm;
+    height: 2cm;
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,7 @@ body {
     padding-right: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    font-size: 45px;
+    font-size: 30px;
     color: darkblue;
 }
 
@@ -36,7 +36,7 @@ body {
 
 #espacioLogo>img {
 
-    width: 35%;
+    width: 2cm;
     display: block;
     margin-left: auto;
     margin-right: 15%;

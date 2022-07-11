@@ -34,7 +34,7 @@ function infoInmueble(inmueble) {
             `
             <div class="row" >
                     <div class="col-6">
-                        <h6 class="inputsinmdescription">${inmueble.description}<h6>
+                        <p class="inputsinmdescription">${inmueble.description}<p>
                     </div>
 
                     <div id="carouselExampleInterval" class="carousel slide col-6" data-bs-ride="carousel"> 
