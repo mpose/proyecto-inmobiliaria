@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VB Propiedades</title>
+  <link rel="shortcut icon" href="img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Round">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+  <link rel="stylesheet" href="style/inicio.css">
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Sixth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+          aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample06">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alquileres.html">Alquileres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ventas.html">Ventas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown"
+                aria-expanded="false">Mi Perfil</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                <li><a class="dropdown-item" href="my-perfil.html">Mi Perfil</a></li>
+                <li><a class="dropdown-item" href="publicacion.html">Publicar</a></li>
+                <li><a class="dropdown-item" href="index.html">Cerrar Sesion</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form>
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="py-5 text-center" style="background-image: url(img/portada.jpg); height: 300px;">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light portada">Disponibles</h1>
+          <p class="lead portada">A continuacion puedes encontrar los alquileres que tenemos disponibles en Colonia,
+            Montevideo y Punta del Este</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container album py-5 bg-light">
+      <div class="container">
+
+        <div>
+          
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary btn-sm mb-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Filtrar
+            </button>
+            <div>
+              <button type="button" class="btn btn-light" id="clearRangeFilter">Limpiar</button>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Encuentra el inmueble que se ajuste a ti</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <label class="input-group-text" for="inputGroupSelect01"><span
+                              class="material-icons-round">real_estate_agent</span></label>
+                          <select class="form-select" id="filterCategory" disabled>
+                            <option value="0">Categoria</option>
+                            <option value="1">Ventas</option>
+                            <option value="2" selected>Alquileres</option>
+                            <option value="3">Alquiler temporal</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <label class="input-group-text" for="inputGroupSelect01"><span
+                              class="material-icons-round">apartment</span></label>
+                          <select class="form-select" id="filterType">
+                            <option value="0" selected>Tipo</option>
+                            <option value="Apartamento">Apartamento</option>
+                            <option value="Casa">Casa</option>
+                            <option value="3">Local Comercial</option>
+                            <option value="4">Terreno</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <label class="input-group-text" for="inputGroupSelect01"><span
+                              class="material-icons-round">map</span></label>
+                          <select class="form-select" id="filterDepartament">
+                            <option value="0" selected>Departamento</option>
+                            <option value="Colonia">Colonia</option>
+                            <option value="Maldonado">Maldonado</option>
+                            <option value="Montevideo">Montevideo</option>
+                            <option value="Paysandú">Paysandú</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <label class="input-group-text" for="inputGroupSelect01"><span
+                              class="material-icons-round">my_location</span></label>
+                          <select class="form-select" id="filterLocation">
+                            <option value="0" selected>Localidad</option>
+                            <option value="1">opcion1</option>
+                            <option value="2">opcion2</option>
+                            <option value="3">opcion3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <label class="input-group-text" for="inputGroupSelect01"><span
+                              class="material-icons-round">room_preferences</span></label>
+                          <select class="form-select" id="filterCondition">
+                            <option value="0" selected>Estado</option>
+                            <option value="1">A estrenar</option>
+                            <option value="2">Usados</option>
+                            <option value="3">En construccion</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <label class="input-group-text" for="inputGroupSelect01"><span
+                              class="material-icons-round">currency_exchange</span></label>
+                          <select class="form-select" id="filterCurrency">
+                            <option value="0" selected>Moneda</option>
+                            <option value="1">$</option>
+                            <option value="2">U$S</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <label class="input-group-text" for="inputGroupSelect01"><span
+                              class="material-icons-round">king_bed</span></label>
+                          <select class="form-select" id="filterBedrooms">
+                            <option value="0" selected>Dormitorios</option>
+                            <option value="1">1 Dormitorio</option>
+                            <option value="2">2 Dormitorios</option>
+                            <option value="3">3 Dormitorios</option>
+                            <option value="4">4 Dormitorios</option>
+                            <option value="5">5 Dormitorios</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <label class="input-group-text" for="inputGroupSelect01"><span
+                              class="material-icons-round">bathtub</span></label>
+                          <select class="form-select" id="filterToilets">
+                            <option value="0" selected>Baños</option>
+                            <option value="1">1 baño</option>
+                            <option value="2">2 baños</option>
+                            <option value="3">Mas de 2 baños</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <span class="material-icons-round input-group-text">keyboard_double_arrow_down</span>
+                          <input type="number" id="filterMin" name="minCost" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" min="0" placeholder="Precio Min.">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <div class="input-group mb-1">
+                          <span class="material-icons-round input-group-text">keyboard_double_arrow_up</span>
+                          <input type="number" id="filterMax" name="maxCost" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" min="0" placeholder="Precio Max.">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div>
+                          <div class="form-check form-switch">
+                            <input class="form-check-input"
+                              type="checkbox" id="filterGarage">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Garage</label>
+                          </div>
+                          <h6>Garantias</h6>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                            <label class="form-check-label" for="flexCheckDefault1">
+                              Sin Garantia
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                              Porto Seguro
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                            <label class="form-check-label" for="flexCheckDefault3">
+                              Anda
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                            <label class="form-check-label" for="flexCheckDefault4">
+                              Contaduria
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal" id="apliFilter">Aplicar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container">
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-light btn-sm" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Ordenar por<span class="material-icons-round">expand_more</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><input type="radio" class="btn-check" name="btnradio" id="sortAsc" autocomplete="off" checked>
+                    <label class="dropdown-item btn-sm" for="sortAsc">Menor Precio</label>
+                  </li>
+                  <li><input type="radio" class="btn-check" name="btnradio" id="sortDesc" autocomplete="off">
+                    <label class="dropdown-item btn-sm" for="sortDesc">Mayor Precio</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br>
+            <div class="row" id="listado-inmuebles"> </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer class="text-muted py-5">
+    <div class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4 mb-1">
+            <h4 class="text-white">Contacto</h4>
+            <label class="text-muted"><span class="material-icons-round icons">whatsapp</span> 099859685</label><br>
+            <label class="text-muted"><span class="material-icons-round icons">contact_mail</span> email@example.com</label><br>
+            <label class="text-muted"><span class="material-icons-round icons">location_on</span> Ana Monterroso 2026, Esq. Miguel del Coro</label><br>
+            <label class="text-muted"><span class="material-icons-round icons">schedule</span> Lun. a Vie. de 9hs a17hs</label><br>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white"><span class="material-icons-round">person_add_alt</span>Nuestras redes sociales</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://instagram.com/vbpropiedadesuy?utm_medium=copy_link" class="text-white">Siguenos en
+                  Instagram</a></li>
+              <li><a href="https://www.facebook.com/VB-Propiedades-117550889682355/" class="text-white">Visitanos en
+                  Facebook</a></li>
+              <li><a href="conultas.html" class="text-white">Consultas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="float-end mb-1">
+        <a href="#">Volver Arriba</a>
+      </p>
+    </div>
+  </footer>
+  <!-- <div id="spinner-wrapper">
+    <div class="text-center">
+      <div class="spinner-border" style="width: 10rem; height: 10rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div> -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/alquileres.js"></script>
+
+
+</body>
+
+</html>
