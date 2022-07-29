@@ -56,10 +56,6 @@ function sortProductos(criteria, array) {
   return result;
 }
 
-function verProducto(name) {
-  localStorage.setItem("producto", JSON.stringify({ productName: name }));
-  window.location = "product-info.html";
-}
 
 function mostrarListadoProductos() {
   let htmlContentToAppend = "";
@@ -211,16 +207,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     mostrarListadoProductos();
   });
- /*  document.getElementById("buscador").addEventListener("input", function () {
-    buscar = document.getElementById("buscador").value.toLowerCase();
 
-    mostrarListadoProductos();
-  }); */
 });
 
 function verInfo(productid) {
-
   localStorage.setItem('inmueble-id', productid);
   window.location = 'info-inmueble.html';
-
 }

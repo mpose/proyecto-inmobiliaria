@@ -14,8 +14,6 @@ body {
 }
 
 #infoPrincipal {
-
-    height: 2cm;
     margin: 0;
     padding: 0;
 }
@@ -36,7 +34,7 @@ body {
 
 #espacioLogo>img {
 
-    width: 2cm;
+    width: 2.8cm;
     display: block;
     margin-left: auto;
     margin-right: 15%;
@@ -50,19 +48,20 @@ body {
 }
 
 #footerInfoInmueble {
-    margin: 0%;
+    margin: 0;
     background-color: #00008B;
 }
 
-#footerRow > h4 {
+#footerRow>h4 {
     text-align: left;
     margin-left: 0.5cm;
 }
 
-#footerRow > p{
+#footerRow>p {
     margin-left: 0.5cm;
 }
 
 #redes {
-    margin-left: 400px;
+    padding: 0%;
+    margin: 0%;
 }
