@@ -124,8 +124,8 @@
                               class="material-icons-round">real_estate_agent</span></label>
                           <select class="form-select" id="filterCategory" disabled>
                             <option value="0">Categoria</option>
-                            <option value="1">Ventas</option>
-                            <option value="2" selected>Alquileres</option>
+                            <option value="Venta">Ventas</option>
+                            <option value="Alquiler" selected>Alquileres</option>
                             <option value="3">Alquiler temporal</option>
                           </select>
                         </div>
@@ -138,8 +138,8 @@
                             <option value="0" selected>Tipo</option>
                             <option value="Apartamento">Apartamento</option>
                             <option value="Casa">Casa</option>
-                            <option value="3">Local Comercial</option>
-                            <option value="4">Terreno</option>
+                            <option value="Local">Local Comercial</option>
+                            <option value="Terreno">Terreno</option>
                           </select>
                         </div>
                       </div>
@@ -156,38 +156,13 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-sm-12 col-lg-6">
+                      <div class="col-sm-12 col-lg-6" id="localidadGeneral">
                         <div class="input-group mb-1">
                           <label class="input-group-text" for="inputGroupSelect01"><span
                               class="material-icons-round">my_location</span></label>
-                          <select class="form-select" id="filterLocation">
+                          <select class="form-select" id="filterLocation" disabled>
                             <option value="0" selected>Localidad</option>
                             <option value="1">opcion1</option>
-                            <option value="2">opcion2</option>
-                            <option value="3">opcion3</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-lg-6">
-                        <div class="input-group mb-1">
-                          <label class="input-group-text" for="inputGroupSelect01"><span
-                              class="material-icons-round">room_preferences</span></label>
-                          <select class="form-select" id="filterCondition">
-                            <option value="0" selected>Estado</option>
-                            <option value="1">A estrenar</option>
-                            <option value="2">Usados</option>
-                            <option value="3">En construccion</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-lg-6">
-                        <div class="input-group mb-1">
-                          <label class="input-group-text" for="inputGroupSelect01"><span
-                              class="material-icons-round">currency_exchange</span></label>
-                          <select class="form-select" id="filterCurrency">
-                            <option value="0" selected>Moneda</option>
-                            <option value="1">$</option>
-                            <option value="2">U$S</option>
                           </select>
                         </div>
                       </div>
@@ -231,7 +206,7 @@
                             aria-describedby="inputGroup-sizing-default" min="0" placeholder="Precio Max.">
                         </div>
                       </div>
-                      <div class="col-lg-6">
+                      <div class="col-lg-6" style="display: none;"> <!-- Al final vemos si se queda-->
                         <div>
                           <div class="form-check form-switch">
                             <input class="form-check-input"
@@ -240,25 +215,25 @@
                           </div>
                           <h6>Garantias</h6>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                            <input class="form-check-input" type="checkbox" value="" id="garantiaSin">
                             <label class="form-check-label" for="flexCheckDefault1">
                               Sin Garantia
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                            <input class="form-check-input" type="checkbox" value="" id="garantiaPorto">
                             <label class="form-check-label" for="flexCheckDefault2">
                               Porto Seguro
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                            <input class="form-check-input" type="checkbox" value="" id="garantiaAnda">
                             <label class="form-check-label" for="flexCheckDefault3">
                               Anda
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                            <input class="form-check-input" type="checkbox" value="" id="garantiaContaduria">
                             <label class="form-check-label" for="flexCheckDefault4">
                               Contaduria
                             </label>
