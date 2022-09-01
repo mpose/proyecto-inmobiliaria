@@ -15,23 +15,34 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 function infoInmueble(inmueble) {
 
-    document.getElementById("tituloSubtitulo").innerHTML = "";
+    document.getElementById("titulo").innerHTML = "";
     document.getElementById("infoInmueble").innerHTML = "";
-    let tituloySubtitulo = "";
-    let ininfo = "";
+    document.getElementById("localidadInmueble").innerHTML = "";
+    document.getElementById("precioInmueble").innerHTML = "";
     
-    tituloySubtitulo = `${inmueble.name} `+` <br/>  ` + `${inmueble.currency}` + ` ${inmueble.cost}`
+    let titulo = "";
+    let locInmueble = "";
+    let ininfo = "";
+    let precioInmueble = "";
+    
+    titulo = `${inmueble.type} `+` en `+`${inmueble.category}`;
+    locInmueble = `${inmueble.location}`+`,`+`${inmueble.departament}`
+    precioInmueble = `${inmueble.currency} `+` ${inmueble.cost}` 
 
-    document.getElementById("tituloSubtitulo").innerHTML += tituloySubtitulo;
+    document.getElementById("titulo").innerHTML += titulo;
+    document.getElementById("localidadInmueble").innerHTML += locInmueble;
+    document.getElementById("precioInmueble").innerHTML += precioInmueble;
+  
+    
         ininfo =
             `
             <div class="row">
             
-                <div id="carouselExampleInterval" class="carousel slide col-6" data-bs-ride="carousel"> 
-                    <div class="carousel-inner">
+                <div id="carouselExampleInterval" class="carousel slide col-xl-6" data-bs-ride="carousel"> 
+                    <div  class="carousel-inner" id="carrusell">
                         <div id="coso">
                          </div>
-                    </div>
+                    
                 
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                         data-bs-slide="prev">
@@ -43,31 +54,31 @@ function infoInmueble(inmueble) {
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                     </button>
-                    </div>
+                </div>
+                </div>
 
-                    <div class="col">
-                    <h4>Detalles de la propiedad </h4>
-                        <p class="inputsinmdescription">${inmueble.description}<p>
-                        </br>
-                        </br>
-                        <div class="row">
-                        <div class="col-6">
-                            <ul class="list-group list-group-flush">
+                    <div class="col-xl-6 col-md-6 xs-12" id="detallesPropiedad">
+                    <br>
+                        <div id="descriptionInmueble">
+                        <h4 id="descriptionTitulo" >Descripción</h4>
+                                    <div id="lista"></div>
+                                    <div id="lista2"></div>
+                                </br>
+                                </br>
+                            </div>
+                            <div>
+                            <h4> Detalles </h4>
+                            <ul class="list-group list-group-flush" id="listaDetalles">
                                 <li class="list-group-item"> Tipo de inmueble: ${inmueble.type} </li>
                                 <li class="list-group-item"> Baños: ${inmueble.toilets}  </li>
                                 <li class="list-group-item"> Dormitorios: ${inmueble.bedrooms} </li>
                                 <li class="list-group-item"> Garage: ${inmueble.garage} </li>
+                                <li class="list-group-item"> Departamento: ${inmueble.departament} </li>
+                                <li class="list-group-item"> Localidad: ${inmueble.location} </li>
+                                <li class="list-group-item"> Gastos comunes: ${inmueble.expenses}</li>
+                                <li class="list-group-item"> Garantías: ${inmueble.guarantee}</li>
                             </ul>
-                        </div>
-                        <div class="col-6">
-                        <ul>
-                            <li class="list-group-item"> Departamento: ${inmueble.departament} </li>
-                            <li class="list-group-item"> Localidad: ${inmueble.location} </li>
-                            <li class="list-group-item"> Gastos comunes: ${inmueble.expenses}</li>
-                            <li class="list-group-item"> Garantías: ${inmueble.guarantee}</li>
-                        </ul>
-                        </div>
-                        </div>
+                            </div>
                     </div>
             </div>
             `
@@ -81,13 +92,32 @@ function infoInmueble(inmueble) {
         let activeClass = i == 0 ? "active" : "";        
 
         htmlContentToAppend += `
-            <div  class="carousel-item ${activeClass}" id="imagen${i}">
-                <img style="width: 150%; height: 600px;" id="imInmueble" src="` + imageSrc + `" class="d-block w-100" id="imagesInmueble" alt="">
+            <div class="carousel-item ${activeClass}" id="imagen${i}">
+                <img style="width: 150%; height: 600px;" id="imInmueble" src="` + imageSrc + `" class="d-block w-100 " id="imagesInmueble" alt="">
             </div>
             
         `
 
         document.getElementById("coso").innerHTML = htmlContentToAppend;
+    }
+
+    let lista = "";
+    let lista2 = "";
+
+    for(let i = 0 ; i < inmueble.description.length; i++){
+    
+        lista += `<p> ${inmueble.description[i]} </p>`
+
+        document.getElementById("lista").innerHTML = lista
+
+    }
+
+    for(let i = 0 ; i < inmueble.AdditionalInformation.length; i++){
+    
+        lista2 += `<p> ${inmueble.AdditionalInformation[i]} </p>`
+
+        document.getElementById("lista2").innerHTML = lista2
+
     }
 };
 

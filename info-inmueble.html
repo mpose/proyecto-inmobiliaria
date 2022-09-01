@@ -31,7 +31,8 @@
               </button>
       
               <div class="collapse navbar-collapse" id="navbarsExample06">
-                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <div class="col-8">
+                <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
@@ -51,9 +52,18 @@
                     </ul>
                   </li>
                 </ul>
-                <form>
-                  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                </form>
+              </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-10">
+                    <p style="text-align: right; color: yellow; margin-top: 15px;">VB Propiedades</p>
+                  </div>
+                  <div class="col-2">
+                  <img src="img/loguini_1.png" style="height: 1.5cm;">
+                </div>
+              </div>
+
+              </div>
               </div>
             </div>
           </nav>
@@ -61,17 +71,20 @@
 
     <main style="background-color: #F8F9FA;">
 
-        <section id="section1">
             <div id="infoPrincipal" class="row">
-                <div id="tituloSubtitulo" class="col-10">
+              <div class="col-1" ></div>
+                <div class="col-5">
+                  <h3 id="titulo"></h3>
+                  <h6 id="localidadInmueble"></h6>
+                  <h4 id="precioInmueble"></h4>
                 </div>
-                <div id="espacioLogo" class="col-2">
+                <div class="col-1"></div>
+                <!-- <div id="espacioLogo" class="col-2">
                     <img src="img/loguini_1.png">
-                </div>
-            </div>
-        </section>
+                </div> -->
+            </div>  
 
-        <div class="py-5 text-center container">
+        <div class="py-5 container" id="conteinerInfo">
             <div id="infoInmueble"></div>
         </div>
     </main>
