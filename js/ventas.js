@@ -90,23 +90,30 @@ function mostrarListadoProductos() {
 
             
               htmlContentToAppend += `
-                          <div class="col-md-4 col-sm-6 col-lg-3">
-                              <div class="card shadow-sm">
-                              <img class="bd-placeholder-img card-img-top" width="100%" height="225px" src="` + productF.images[0] + `"</img>
+              <div class="col-md-4 col-sm-6 col-lg-4 py-2">
+                  <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img" width="100%" height="150px" src="` + productF.images[0] + `"</img>
 
-                                  <div class="card-body">
-                                      <h6 class="card-text">`+ productF.name + `</h6>
-                                      <div class="d-flex justify-content-between align-items-center">
-                                          <div class="btn-group">
-                                              <button type="button" class="btn btn-sm btn-info" onclick="verInfo('` + productF.id + `')"
-                                              " >Ver Más</button>
-                                          </div>
-                                          <small class="text-muted">` + productF.currency + productF.cost + `</small>
-                                      </div>
-                                  </div>
-                              </div>
+                      <div class="card-body">
+                          <h7 class="card-text">`+ productF.category + ` en `+ productF.departament +`</h7><br>
+                          <small class="text-muted">` + productF.location + `</small>
+                          <hr class="dropdown-divider">
+                          <div class= "d-flex justify-content-between">
+                          <p class="card-text d-flex"><span class="material-icons-round">king_bed</span>` + productF.bedrooms + `</p>
+                          <p class="card-text d-flex"><span class="material-icons-round">bathtub</span>` + productF.toilets + `</p>
+                          <small class="text-muted">` + productF.currency + productF.cost + `</small>
                           </div>
-                          `;
+                          
+                          <div>
+                              <div class="d-grid gap-2">
+                                  <button type="button" class="btn btn-sm btn-info" onclick="verInfo('` + productF.id + `')">Ver Más</button>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              `;
               
             }
       document.getElementById("listado-inmuebles").innerHTML = htmlContentToAppend;
