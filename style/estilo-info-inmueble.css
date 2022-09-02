@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: bisque;
 }
 
 .nav-link {
@@ -13,9 +12,14 @@ body {
 #infoPrincipal {
     margin: 0;
     padding: 0;
-    background-color:#FFFFFF;
     box-shadow: dimgray;
     box-shadow: 0px 2px 6px;
+    
+}
+
+.iconis{
+    text-align: center;
+    
 }
 
 #tituloSubtitulo {
@@ -28,6 +32,7 @@ body {
     color: black;
     
 }
+
 
 /*
 #espacioLogo {
@@ -43,24 +48,17 @@ body {
 }
 */
 
-
-#carrusell { 
-    box-shadow: 5px 5px 10px;
-}
-
 #detallesPropiedad {
     background-color: #FFFFFF;
     box-shadow: 5px 5px 10px;
     padding: 25px;
 }
 
-/* #descriptionInmueble{
-    
+
+
+#listaDetalles>li{
+padding: 1px;
 }
-
-#listaDetalles{
-
-} */
 
 #descriptionTitulo {
     color: black;
@@ -68,9 +66,16 @@ body {
     padding: 0;
 }
 
+#descriptionInmueble{
+    border-style:solid ;
+    border-color: lightgrey;
+    box-shadow: 0px 2px 5px;
+    padding: 50px;
+}
+
 #infoInmueble {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 25cm;
+    margin-bottom: 10cm;
 }
 
 #footerInfoInmueble {

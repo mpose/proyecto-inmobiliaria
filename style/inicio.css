@@ -1,10 +1,10 @@
 .portada {
     color: white;
-    text-shadow: 4px 4px 10px black;
+    text-shadow: 2px 2px 5px black;
 }
 p.portada {
     color: white;
-    text-shadow: 4px 4px 10px black;
+    text-shadow: 2px 2px 5px black;
 }
 .alinear {
     align-self: flex-end;
