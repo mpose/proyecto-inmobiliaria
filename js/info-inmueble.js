@@ -67,19 +67,14 @@ function infoInmueble(inmueble) {
                 </div>
             </div>
                 <br>
-                    <div class="descriptionInmueble col-lg-6 col-md-12 sm-12">
-                        <div class="detallesInmueble">Descripción de la propiedad</div>
+                    <div class="col-lg-6 col-md-12 sm-12 py-4" id="descriptionInmueble">
+                        <h4 id="descriptionTitulo" >Descripción</h4>
                                     <div id="lista"></div>
                                     <div id="lista2"></div>
                                 </br>
                                 </br>
-                    </div>
-                    </div>
-                    </br>
-                    </br>
-                    <div class="row">
-                        <div class="descriptionInmueble col-lg-12 col-md-8 sm-12">
-                            <div class="detallesInmueble"> Detalles de la propiedad </div>
+                    
+                            <h4> Detalles </h4>
                             <ul class="list-group list-group-flush" id="listaDetalles">
                                 <li class="list-group-item"> Tipo de inmueble: ${inmueble.type} </li>
                                 <li class="list-group-item"> Baños: ${inmueble.toilets}  </li>
@@ -90,12 +85,12 @@ function infoInmueble(inmueble) {
                                 <li class="list-group-item"> Gastos comunes: ${inmueble.expenses}</li>
                                 <li class="list-group-item"> Garantías: ${inmueble.guarantee}</li>
                             </ul>   
-                        </div>
+                        
                     </div>
-        
+            </div>
 
             <div class="row">
-        </div>
+            </div>
             `
         document.getElementById("infoInmueble").innerHTML += ininfo;
 
