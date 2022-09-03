@@ -21,7 +21,7 @@ function infoInmueble(inmueble) {
     document.getElementById("precioInmueble").innerHTML = `${inmueble.currency} `+` ${inmueble.cost}`;
     document.getElementById("iconitos").innerHTML = iconitos;
    
-    iconitos = `<div><h6 style="text-align:center;">Características</h6></div><div class="row"><div class="iconis col-3"><span class="material-icons-round">king_bed</span><p>${inmueble.bedrooms}</p></div>
+    iconitos = `<div><h6 class="offset-md-6">Características</h6></div><div class="row offset-md-3"><div class="iconis col-3"><span class="material-icons-round">king_bed</span><p>${inmueble.bedrooms}</p></div>
     <div class="iconis col-3"><span class="material-icons-round">bathtub</span><p> ${inmueble.toilets}</p></div>
     <div class="iconis col-3"><span class="material-icons-round">home</span><p> ${inmueble.squareMetersBuilt}m²</p></div>
     <div class="iconis col-3"><span class="material-icons-round">area_chart</span><p> ${inmueble.squareMeters}m²</p></div></div>`
@@ -30,82 +30,84 @@ function infoInmueble(inmueble) {
         ininfo =
             `
             <div class="row">
-            <div id="carousel" class="col-lg-6 col-md-12 sm-12">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"> 
-                    <div  class="carousel-inner" id="carrusell">
-                        <div id="coso"></div>
-                    </div>
+                <div id="carousel" class="col-lg-6 col-md-12 col-sm-12">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"> 
+                        <div  class="carousel-inner" id="carrusell">
+                            <div id="coso"></div>
+                        </div>
                     
                 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                    </button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-                <br>
-                    <div class="descriptionInmueble col-lg-6 col-md-12 sm-12">
-                        <div class="detallesInmueble">Descripción de la propiedad</div>
-                                <div id="div1"> 
-                                    <div id="lista"></div>
-                                    <div id="lista2"></div>
-                                    </div>
-                                </br>
-                                </br>
-                    </div>
-                    </div>
-                    </br>
-                    </br>
-                    <div class="row">
-                        <div class="descriptionInmueble col-lg-6 col-md-8 sm-12">
-                            <div class="detallesInmueble"> Detalles de la propiedad </div>
-                            <ul class="list-group list-group-flush" id="listaDetalles">
-                                <li class="list-group-item"> Tipo de inmueble: ${inmueble.type} </li>
-                                <li class="list-group-item"> Baños: ${inmueble.toilets}  </li>
-                                <li class="list-group-item"> Dormitorios: ${inmueble.bedrooms} </li>
-                                <li class="list-group-item"> Garage: ${inmueble.garage} </li>
-                                <li class="list-group-item"> Departamento: ${inmueble.departament} </li>
-                                <li class="list-group-item"> Localidad: ${inmueble.location} </li>
-                                <li class="list-group-item"> Gastos comunes: ${inmueble.expenses}</li>
-                                <li class="list-group-item"> Garantías: ${inmueble.guarantee}</li>
-                            </ul>   
+                <div class="descriptionInmueble col-lg-6 col-md-12 sm-12">
+                    <div class="detallesInmueble">Descripción de la propiedad</div>
+                        <div id="div1"> 
+                            <div id="lista"></div>
+                            <div id="lista2"></div>
                         </div>
-                        <div id="formularioConsulta" class="col-lg-6">
-
-                            <div class="row">
-                                 <div class="col">
-                                 <h2>Consulte por esta propiedad </h2>
-                                        <form>
-                                         <input type="text" class="form-control" placeholder="Nombre y apellido">
-                                            <br>
-                                            <input type="email" class="form-control" placeholder="Email">
-                                            <br>
-                                            <input type="text" class="form-control" placeholder="Teléfono">
-                                            <br>
-                                            <textarea style="resize: none;" placeholder="Mensaje" class="form-control" rows="5" id="exampleFormControlTextarea1"></textarea>
-                                            <br>
-                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <button type="button" class="btn btn-success ">Enviar</button>
-                                            </div>
-                                            
-                                            </form>
-                                        </div>      
-                              
+                        <div class="descriptionInmueble col-lg-12 col-md-12 sm-12">
+                            <div class="detallesInmueble"> Detalles de la propiedad </div>
+                                <table class="table table-striped table-sm" id="listaDetalles">
+                                    <tbody>
+                                        <tr><th></th><td class= "col-6">Tipo de inmueble:</td><td>${inmueble.type}</td></tr>
+                                        <tr><th></th><td class= "col-6">Baños:</td><td>${inmueble.toilets}</td></tr>
+                                        <tr><th></th><td class= "col-6">Dormitorios:</td><td>${inmueble.bedrooms}</td></tr>
+                                        <tr><th></th><td class= "col-6">Garage:</td><td>${inmueble.garage}</td></tr>
+                                        <tr><th></th><td class= "col-6">Departamento:</td><td>${inmueble.departament}</td></tr>
+                                        <tr><th></th><td class= "col-6">Localidad:</td><td>${inmueble.location}</td></tr>
+                                        <tr><th></th><td class= "col-6">Gastos comunes:</td><td>$${inmueble.expenses}</td></tr>
+                                        <tr><th></th><td class= "col-6">Garantías:</td><td>${inmueble.guarantee}</td></tr>
+                                    </tbody>
+                                </table>   
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <div class="col py-3">
-                        <iframe
-                        src="${inmueble.map}"
-                        width="100%" height="450" style="border:5px; solid" allowfullscreen="" loading="lazy" class="map"></iframe>
+                </div>
+                <br>
+                <hr class="dropdown-divider">
+                <br>
+                <div class="row">
+                        
+                    <div id="formularioConsulta" class="col-lg-6">
+
+                        <div class="col">
+                            <h4>Consulte por esta propiedad </h4>
+                            <form>
+                                <input type="text" class="form-control" placeholder="Nombre y apellido">
+                                <br>
+                                <input type="email" class="form-control" placeholder="Email">
+                                <br>
+                                <input type="text" class="form-control" placeholder="Teléfono">
+                                <br>
+                                <textarea style="resize: none;" placeholder="Mensaje" class="form-control" rows="5" id="exampleFormControlTextarea1"></textarea>
+                                <br>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="button" class="btn btn-success ">Enviar</button>
+                                </div>
+                                            
+                            </form>
+                        </div> 
                     </div>
+                    <div class="col-lg-6">
+                        <div class="col py-3">
+                            <iframe
+                                src="${inmueble.map}"
+                                width="100%" height="400px" style="border:5px; solid" allowfullscreen="" loading="lazy" class="map"></iframe>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <br>
             </div>
             `
         document.getElementById("infoInmueble").innerHTML += ininfo;

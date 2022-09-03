@@ -25,6 +25,14 @@
   <header>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Sixth navbar example">
       <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4">
+            <img src="img/loguini_1.png" style="height: 1.5cm;">
+          </div>
+          <div class="col-lg-8 col-sm-8">
+            <p style="color: yellow; margin-top: 15px;">VB Propiedades</p>
+          </div>
+        </div>
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
           aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,8 +40,8 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExample06">
-          <div class="col-8">
-            <ul class="navbar-nav">
+          <div class="col-lg-8 col-sm-12">
+            <ul class="navbar-nav d-flex justify-content-evenly">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
@@ -43,7 +51,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="ventas.html">Ventas</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown" style="display: none;">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown"
                   aria-expanded="false">Mi Perfil</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown06">
@@ -54,17 +62,6 @@
               </li>
             </ul>
           </div>
-          <div class="col-4">
-            <div class="row">
-              <div class="col-10">
-                <p style="text-align: right; color: yellow; margin-top: 15px;">VB Propiedades</p>
-              </div>
-              <div class="col-2">
-                <img src="img/loguini_1.png" style="height: 1.5cm;">
-              </div>
-            </div>
-
-          </div>
         </div>
       </div>
     </nav>
@@ -74,14 +71,14 @@
 
     <div class="container">
       <div id="infoPrincipal" class="row">
-        <div class="col-1"></div>
-        <div class="col-6">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 col-sm-12">
           <h3 id="titulo"></h3>
           <h6 id="localidadInmueble"></h6>
           <h4 id="precioInmueble"></h4>
         </div>
 
-        <div id="iconitos" class="col-5">
+        <div id="iconitos" class="col-lg-6 justify-content-end">
         </div>
       </div>
     </div><br>
