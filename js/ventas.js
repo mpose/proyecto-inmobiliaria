@@ -91,8 +91,8 @@ function mostrarListadoProductos() {
             
               htmlContentToAppend += `
               <div class="col-md-4 col-sm-6 col-lg-4 py-2">
-                  <div class="card shadow-sm">
-                  <img class="bd-placeholder-img card-img" width="100%" height="150px" src="` + productF.images[0] + `"</img>
+                  <div class="card">
+                  <img class="bd-placeholder-img card-img" width="100%" height="200px" src="` + productF.images[0] + `"</img>
 
                       <div class="card-body">
                           <h7 class="card-text">`+ productF.category + ` en `+ productF.departament +`</h7><br>

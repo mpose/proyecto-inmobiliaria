@@ -62,7 +62,7 @@ padding: 1px;
 
 #infoInmueble {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 10cm;
+    /*margin-bottom: 10cm;*/
 }
 
 #footerInfoInmueble {
@@ -82,4 +82,9 @@ padding: 1px;
 #redes {
     padding: 0%;
     margin: 0%;
+}
+.map {
+    border-style:solid ;
+    border-color: lightgrey;
+    box-shadow: 0px 2px 5px;
 }

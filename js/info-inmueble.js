@@ -15,35 +15,18 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 function infoInmueble(inmueble) {
 
-    document.getElementById("titulo").innerHTML = "";
+    document.getElementById("titulo").innerHTML = `${inmueble.type} `+` en `+`${inmueble.category}`;
     document.getElementById("infoInmueble").innerHTML = "";
-    document.getElementById("localidadInmueble").innerHTML = "";
-    document.getElementById("precioInmueble").innerHTML = "";
-    document.getElementById("iconitos").innerHTML = "";
-    
-    let titulo = "";
-    let locInmueble = "";
-    let ininfo = "";
-    let precioInmueble = "";
-    let iconitos = "";
-    
-    titulo = `${inmueble.type} `+` en `+`${inmueble.category}`;
-    locInmueble = `${inmueble.location}`+`,`+`${inmueble.departament}`
-    precioInmueble = `${inmueble.currency} `+` ${inmueble.cost}` 
-
+    document.getElementById("localidadInmueble").innerHTML = `${inmueble.location}`+`, `+`${inmueble.departament}`;
+    document.getElementById("precioInmueble").innerHTML = `${inmueble.currency} `+` ${inmueble.cost}`;
+    document.getElementById("iconitos").innerHTML = iconitos;
+   
     iconitos = `<div><h6 style="text-align:center;">Características</h6></div><div class="row"><div class="iconis col-3"><span class="material-icons-round">king_bed</span><p>${inmueble.bedrooms}</p></div>
     <div class="iconis col-3"><span class="material-icons-round">bathtub</span><p> ${inmueble.toilets}</p></div>
     <div class="iconis col-3"><span class="material-icons-round">home</span><p> ${inmueble.squareMetersBuilt}m²</p></div>
-    <div class="iconis col-3"><span class="material-icons-round">area_chart</span><p> ${inmueble.squareMeters}</p></div></div>`
+    <div class="iconis col-3"><span class="material-icons-round">area_chart</span><p> ${inmueble.squareMeters}m²</p></div></div>`
 
 
-    document.getElementById("iconitos").innerHTML +=iconitos;
-    document.getElementById("titulo").innerHTML += titulo;
-    document.getElementById("localidadInmueble").innerHTML += locInmueble;
-    document.getElementById("precioInmueble").innerHTML += precioInmueble;
-    
-  
-    
         ininfo =
             `
         <div class="row">
@@ -87,10 +70,12 @@ function infoInmueble(inmueble) {
                             </ul>   
                         
                     </div>
-            </div>
-
-            <div class="row">
-            <iframe src="${inmueble.map}"width="250" height="175" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br>
+                    <div class="col py-3">
+                        <iframe
+                        src="${inmueble.map}"
+                        width="100%" height="450" style="border:5px; solid" allowfullscreen="" loading="lazy" class="map"></iframe>
+                    </div>
             </div>
             `
         document.getElementById("infoInmueble").innerHTML += ininfo;
