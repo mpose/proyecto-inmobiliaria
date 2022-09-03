@@ -90,6 +90,7 @@ function infoInmueble(inmueble) {
             </div>
 
             <div class="row">
+            <iframe src="${inmueble.map}"width="250" height="175" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             `
         document.getElementById("infoInmueble").innerHTML += ininfo;
