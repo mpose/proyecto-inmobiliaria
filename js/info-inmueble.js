@@ -52,8 +52,10 @@ function infoInmueble(inmueble) {
                 <br>
                     <div class="descriptionInmueble col-lg-6 col-md-12 sm-12">
                         <div class="detallesInmueble">Descripción de la propiedad</div>
+                                <div id="div1"> 
                                     <div id="lista"></div>
                                     <div id="lista2"></div>
+                                    </div>
                                 </br>
                                 </br>
                     </div>
@@ -61,7 +63,7 @@ function infoInmueble(inmueble) {
                     </br>
                     </br>
                     <div class="row">
-                        <div class="descriptionInmueble col-lg-12 col-md-8 sm-12">
+                        <div class="descriptionInmueble col-lg-6 col-md-8 sm-12">
                             <div class="detallesInmueble"> Detalles de la propiedad </div>
                             <ul class="list-group list-group-flush" id="listaDetalles">
                                 <li class="list-group-item"> Tipo de inmueble: ${inmueble.type} </li>
@@ -74,8 +76,29 @@ function infoInmueble(inmueble) {
                                 <li class="list-group-item"> Garantías: ${inmueble.guarantee}</li>
                             </ul>   
                         </div>
-                    </div>  
-                        
+                        <div id="formularioConsulta" class="col-lg-6">
+
+                            <div class="row">
+                                 <div class="col">
+                                 <h2>Consulte por esta propiedad </h2>
+                                        <form>
+                                         <input type="text" class="form-control" placeholder="Nombre y apellido">
+                                            <br>
+                                            <input type="email" class="form-control" placeholder="Email">
+                                            <br>
+                                            <input type="text" class="form-control" placeholder="Teléfono">
+                                            <br>
+                                            <textarea style="resize: none;" placeholder="Mensaje" class="form-control" rows="5" id="exampleFormControlTextarea1"></textarea>
+                                            <br>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <button type="button" class="btn btn-success ">Enviar</button>
+                                            </div>
+                                            
+                                            </form>
+                                        </div>      
+                              
+                            </div>
+                        </div>
                     </div>
                     <br>
                     <div class="col py-3">
@@ -108,7 +131,7 @@ function infoInmueble(inmueble) {
 
     for(let i = 0 ; i < inmueble.description.length; i++){
     
-        lista += `<p class="description"> ${inmueble.description[i]} </p>`
+        lista += `<div class="description"> ${inmueble.description[i]} </div>`
 
         document.getElementById("lista").innerHTML = lista
 
@@ -116,7 +139,7 @@ function infoInmueble(inmueble) {
 
     for(let i = 0 ; i < inmueble.AdditionalInformation.length; i++){
     
-        lista2 += `<p class="description"> ${inmueble.AdditionalInformation[i]} </p>`
+        lista2 += `<div class="description"> ${inmueble.AdditionalInformation[i]} </div>`
 
         document.getElementById("lista2").innerHTML = lista2
 

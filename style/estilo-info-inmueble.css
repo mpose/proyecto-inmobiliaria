@@ -8,6 +8,9 @@ body {
     color: aliceblue;
 }
 
+#containerprincipal{
+    border-style: solid;
+}
 
 #infoPrincipal {
     margin: 0;
@@ -33,6 +36,9 @@ body {
     
 }
 
+#carrusell{
+    border-radius: 2ch;
+}
 
 #detallesPropiedad {
     background-color: #FFFFFF;
@@ -41,9 +47,7 @@ body {
 }
 
 .descriptionInmueble{
-    border-style:solid ;
     border-color: lightgrey;
-    box-shadow: 0px 2px 5px;
     padding: 0;
 }
 
@@ -54,6 +58,10 @@ body {
     text-align: center;  
     padding-top: none; 
     background-color: lightskyblue;
+}
+
+#div1{
+    padding: 15px;
 }
 
 #listaDetalles>li{
