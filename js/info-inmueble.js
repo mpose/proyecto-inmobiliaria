@@ -52,9 +52,12 @@ function infoInmueble(inmueble) {
                 <div class="descriptionInmueble col-lg-6 col-md-12 sm-12">
                     <div class="detallesInmueble">Descripción de la propiedad</div>
                         <div id="div1"> 
-                            <div id="lista"></div>
+                        <div class="description" height: 100%;> ${inmueble.description} </div>
                             <div id="lista2"></div>
                         </div>
+                        <br>
+                        <br>
+                        <div class="row">
                         <div class="descriptionInmueble col-lg-12 col-md-12 sm-12">
                             <div class="detallesInmueble"> Detalles de la propiedad </div>
                                 <table class="table table-striped table-sm" id="listaDetalles">
@@ -65,12 +68,14 @@ function infoInmueble(inmueble) {
                                         <tr><th></th><td class= "col-6">Garage:</td><td>${inmueble.garage}</td></tr>
                                         <tr><th></th><td class= "col-6">Departamento:</td><td>${inmueble.departament}</td></tr>
                                         <tr><th></th><td class= "col-6">Localidad:</td><td>${inmueble.location}</td></tr>
+                                        <tr><th></th><td class= "col-6">Calles:</td><td>${inmueble.streets}</td></tr>
                                         <tr><th></th><td class= "col-6">Gastos comunes:</td><td>$${inmueble.expenses}</td></tr>
                                         <tr><th></th><td class= "col-6">Garantías:</td><td>${inmueble.guarantee}</td></tr>
                                     </tbody>
                                 </table>   
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <br>
@@ -128,24 +133,24 @@ function infoInmueble(inmueble) {
         document.getElementById("coso").innerHTML = htmlContentToAppend;
     }
 
-    let lista = "";
+    /* let lista = "";
     let lista2 = "";
 
     for(let i = 0 ; i < inmueble.description.length; i++){
     
-        lista += `<div class="description"> ${inmueble.description[i]} </div>`
+        lista += `<div class="description"> ${inmueble.description} </div>`
 
         document.getElementById("lista").innerHTML = lista
 
-    }
+    } */
 
-    for(let i = 0 ; i < inmueble.AdditionalInformation.length; i++){
+   /*  for(let i = 0 ; i < inmueble.AdditionalInformation.length; i++){
     
-        lista2 += `<div class="description"> ${inmueble.AdditionalInformation[i]} </div>`
+        //lista2 += `<div class="description"> ${inmueble.AdditionalInformation[i]} </div>`
 
         document.getElementById("lista2").innerHTML = lista2
 
-    }
+    } */
 };
 
 // function showImagesGallery(array) {

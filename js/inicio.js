@@ -169,7 +169,7 @@ function localidadSeleccionada() {
         <select class="form-select" id="filterLocation">
           <option value="0" selected>Localidad</option>
           <option value="Jacinto Vera">Jacinto Vera</option>
-          <option value="Parque Rodo">Parque Rodó</option>
+          <option value="Parque Rodó">Parque Rodó</option>
           <option value="Tres Cruces">Tres Cruces</option>
         </select>
       </div>`
@@ -182,7 +182,7 @@ function localidadSeleccionada() {
             class="material-icons-round">my_location</span></label>
         <select class="form-select" id="filterLocation">
           <option value="0" selected>Localidad</option>
-          <option value="Paysandu">Paysandú</option>
+          <option value="Paysandú">Paysandú</option>
           <option value="Guichon">Guichón</option>
           <option value="Tambores">Tambores</option>
         </select>

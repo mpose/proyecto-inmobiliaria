@@ -20,8 +20,8 @@ body {
     border-style:solid ;
     border-color: lightgrey;
     box-shadow: 0px 2px 5px;
-    height: 103%;
-    width: 107%;
+    height: 102%;
+    width: 102%;
     transition: all .1s ease-out;
     padding: 0%;
 }
