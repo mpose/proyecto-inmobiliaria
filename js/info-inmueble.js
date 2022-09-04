@@ -52,30 +52,30 @@ function infoInmueble(inmueble) {
                 <div class="descriptionInmueble col-lg-6 col-md-12 sm-12">
                     <div class="detallesInmueble">Descripción de la propiedad</div>
                         <div id="div1"> 
-                        <div class="description" height: 100%;> ${inmueble.description} </div>
+                        <div class="description"> ${inmueble.description} </div>
                             <div id="lista2"></div>
                         </div>
                         <br>
                         <br>
                         <div class="row">
-                        <div class="descriptionInmueble col-lg-12 col-md-12 sm-12">
-                            <div class="detallesInmueble"> Detalles de la propiedad </div>
-                                <table class="table table-striped table-sm" id="listaDetalles">
-                                    <tbody>
-                                        <tr><th></th><td class= "col-6">Tipo de inmueble:</td><td>${inmueble.type}</td></tr>
-                                        <tr><th></th><td class= "col-6">Baños:</td><td>${inmueble.toilets}</td></tr>
-                                        <tr><th></th><td class= "col-6">Dormitorios:</td><td>${inmueble.bedrooms}</td></tr>
-                                        <tr><th></th><td class= "col-6">Garage:</td><td>${inmueble.garage}</td></tr>
-                                        <tr><th></th><td class= "col-6">Departamento:</td><td>${inmueble.departament}</td></tr>
-                                        <tr><th></th><td class= "col-6">Localidad:</td><td>${inmueble.location}</td></tr>
-                                        <tr><th></th><td class= "col-6">Calles:</td><td>${inmueble.streets}</td></tr>
-                                        <tr><th></th><td class= "col-6">Gastos comunes:</td><td>$${inmueble.expenses}</td></tr>
-                                        <tr><th></th><td class= "col-6">Garantías:</td><td>${inmueble.guarantee}</td></tr>
-                                    </tbody>
-                                </table>   
+                            <div class="descriptionInmueble col-lg-12 col-md-12 sm-12">
+                                <div class="detallesInmueble"> Detalles de la propiedad </div>
+                                    <table class="table table-striped table-sm" id="listaDetalles">
+                                        <tbody>
+                                            <tr><th></th><td class= "col-6">Tipo de inmueble:</td><td>${inmueble.type}</td></tr>
+                                            <tr><th></th><td class= "col-6">Baños:</td><td>${inmueble.toilets}</td></tr>
+                                            <tr><th></th><td class= "col-6">Dormitorios:</td><td>${inmueble.bedrooms}</td></tr>
+                                            <tr><th></th><td class= "col-6">Garage:</td><td>${inmueble.garage}</td></tr>
+                                            <tr><th></th><td class= "col-6">Departamento:</td><td>${inmueble.departament}</td></tr>
+                                            <tr><th></th><td class= "col-6">Localidad:</td><td>${inmueble.location}</td></tr>
+                                            <tr><th></th><td class= "col-6">Calles:</td><td>${inmueble.streets}</td></tr>
+                                            <tr><th></th><td class= "col-6">Gastos comunes:</td><td>$${inmueble.expenses}</td></tr>
+                                            <tr><th></th><td class= "col-6">Garantías:</td><td>${inmueble.guarantee}</td></tr>
+                                        </tbody>
+                                    </table>   
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <br>
