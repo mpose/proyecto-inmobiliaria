@@ -181,3 +181,130 @@ function eventDrop(event) {
     // Only DEMO. Changes are redrawn.
     renderPreviews(filesList, multiSelectorUniqPreview, fileInputMulti);
 }
+function localidadSeleccionada() {
+    let departamento = document.getElementById("departamentPublic")
+    let localidad = document.getElementById("localidadGeneralPublic")
+  
+    if (departamento.value === "Colonia") {
+      localidad.enabled
+      localidad.innerHTML = 
+      ` <div class="input-group mb-3">
+          <select class="form-select" id="locationPublic">
+            <option value="0" selected>Localidad</option>
+            <option value="Colonia del Sacramento">Colonia del Sacramento</option>
+            <option value="Rosario">Rosario</option>
+            <option value="Nueva Helvecia">Nueva Helvecia</option>
+          </select>
+        </div>`
+    }
+    if (departamento.value === "Maldonado") {
+      localidad.enabled
+      localidad.innerHTML = 
+      ` <div class="input-group mb-3">
+          <select class="form-select" id="locationPublic">
+            <option value="0" selected>Localidad</option>
+            <option value="Maldonado">Maldonado</option>
+            <option value="Piriapolis">Piriapolis</option>
+            <option value="Punta del Este">Punta del Este</option>
+          </select>
+        </div>`
+    }
+    if (departamento.value === "Montevideo") {
+      localidad.enabled
+      localidad.innerHTML = 
+      ` <div class="input-group mb-3">
+          <select class="form-select" id="locationPublic">
+            <option value="0" selected>Localidad</option>
+            <option value="Aguada">Aguada</option>
+            <option value="Aires Puros">Aires Puros</option>
+            <option value="Atahualpa">Atahualpa</option>
+            <option value="Bañados De Carrasco">Bañados De Carrasco</option>
+            <option value="Barrio Sur">Barrio Sur</option>
+            <option value="Belvedere">Belvedere</option>
+            <option value="Brazo Oriental">Brazo Oriental</option>
+            <option value="Buceo">Buceo</option>
+            <option value="Capurro, Bella Vista">Capurro, Bella Vista</option>
+            <option value="Carrasco">Carrasco</option>
+            <option value="Carrasco Norte">Carrasco Norte</option>
+            <option value="Casabo, Pajas Blancas">Casabo, Pajas Blancas</option>
+            <option value="Casavalle">Casavalle</option>
+            <option value="Castro, P. Castellanos">Castro, P. Castellanos</option>
+            <option value="Centro">Centro</option>
+            <option value="Cerrito">Cerrito</option>
+            <option value="Cerro">Cerro</option>
+            <option value="Ciudad Vieja">Ciudad Vieja</option>
+            <option value="Colon Centro Y Noroeste">Colon Centro Y Noroeste</option>
+            <option value="Colon Sureste, Abayuba">Colon Sureste, Abayuba</option>
+            <option value="Conciliacion">Conciliacion</option>
+            <option value="Cordon">Cordon</option>
+            <option value="Flor De Maroñas">Flor De Maroñas</option>
+            <option value="Ituzaingo">Ituzaingo</option>
+            <option value="Jacinto Vera">Jacinto Vera</option>
+            <option value="Jardines Del Hipodromo">Jardines Del Hipodromo</option>
+            <option value="La Blanqueada">La Blanqueada</option>
+            <option value="La Comercial">La Comercial</option>
+            <option value="La Figurita">La Figurita</option>
+            <option value="La Paloma, Tomkinson">La Paloma, Tomkinson</option>
+            <option value="La Teja">La Teja</option>
+            <option value="Larrañaga">Larrañaga</option>
+            <option value="Las Acacias">Las Acacias</option>
+            <option value="Las Canteras">Las Canteras</option>
+            <option value="Lezica, Melilla">Lezica, Melilla</option>
+            <option value="Malvin">Malvin</option>
+            <option value="Malvin Norte">Malvin Norte</option>
+            <option value="Manga">Manga</option>
+            <option value="Manga, Toledo Chico">Manga, Toledo Chico</option>
+            <option value="Maroñas, Parque Guarani">Maroñas, Parque Guarani</option>
+            <option value="Mercado Modelo, Bolivar">Mercado Modelo, Bolivar</option>
+            <option value="Nuevo Paris">Nuevo Paris</option>
+            <option value="Palermo">Palermo</option>
+            <option value="Parque Rodo">Parque Rodo</option>
+            <option value="Paso De La Arena">Paso De La Arena</option>
+            <option value="Paso De Las Duranas">Paso De Las Duranas</option>
+            <option value="Peñarol, Lavalleja">Peñarol, Lavalleja</option>
+            <option value="Piedras Blancas">Piedras Blancas</option>
+            <option value="Pocitos">Pocitos</option>
+            <option value="Pque. Batlle, V. Dolores">Pque. Batlle, V. Dolores</option>
+            <option value="Prado, Nueva Savona">Prado, Nueva Savona</option>
+            <option value="Pta. Rieles, Bella Italia">Pta. Rieles, Bella Italia</option>
+            <option value="Punta Carretas">Punta Carretas</option>
+            <option value="Punta Gorda">Punta Gorda</option>
+            <option value="Reducto">Reducto</option>
+            <option value="Sayago">Sayago</option>
+            <option value="Tres Cruces">Tres Cruces</option>
+            <option value="Tres Ombues, Victoria">Tres Ombues, Victoria</option>
+            <option value="Union">Union</option>
+            <option value="Villa Española">Villa Española</option>
+            <option value="Villa Garcia, Manga Rur.">Villa Garcia, Manga Rur.</option>
+            <option value="Villa Muñoz, Retiro">Villa Muñoz, Retiro</option>
+          </select>
+        </div>`
+    }
+    if (departamento.value === "Paysandú") {
+      localidad.enabled
+      localidad.innerHTML = 
+      ` <div class="input-group mb-3">
+          <select class="form-select" id="locationPublic">
+            <option value="0" selected>Localidad</option>
+            <option value="Paysandu">Paysandú</option>
+            <option value="Guichon">Guichón</option>
+            <option value="Tambores">Tambores</option>
+          </select>
+        </div>`
+    }
+    if (departamento.value == 0) {
+      localidad.innerHTML = 
+          ` <div class="input-group mb-3">
+              <select class="form-select" id="locationPublic" disabled>
+                <option value="0" selected>Localidad</option>
+                <option value="1">Seleccione Departamento</option>
+              </select>
+            </div>`
+    }
+  
+  }
+document.getElementById("departamentPublic").addEventListener("change", function () {
+   
+    localidadSeleccionada();
+  
+    });

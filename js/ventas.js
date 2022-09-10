@@ -91,8 +91,8 @@ function mostrarListadoProductos() {
             
               htmlContentToAppend += `
               <div class="col-md-4 col-sm-6 col-lg-4 py-2">
-                  <div class="card">
-                  <img class="bd-placeholder-img card-img" width="100%" height="200px" src="` + productF.images[0] + `"</img>
+                  <div class="card" onclick="verInfo('` + productF.id + `')">
+                      <img class="bd-placeholder-img card-img" width="100%" height="200px" src="` + productF.images[0] + `"</img>
 
                       <div class="card-body">
                           <h7 class="card-text">`+ productF.category + ` en `+ productF.departament +`</h7><br>
@@ -105,16 +105,12 @@ function mostrarListadoProductos() {
                           <small class="card-text d-flex"><span class="material-icons-round">area_chart</span>` + productF.squareMeters + `m²</small>
                           </div>
                           
-                          <div>
-                          <div>
                           <div class="input-group input-group-sm mb-0 mt-1">
                             <input type="text" class="form-control" placeholder="` + productF.currency + productF.cost + `" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" style="background-color: #0DCAF0; border: solid; border-color: #0DCAF0; color: black;" disabled>
                             <button type="button" class="btn btn-sm btn-info" onclick="verInfo('` + productF.id + `')">Ver Más</button>
                            </div>
-                        </div>
-                              
-                          </div>
                       </div>
+                              
                   </div>
               </div>
               `;
