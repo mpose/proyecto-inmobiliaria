@@ -26,7 +26,13 @@ function infoInmueble(inmueble) {
     <div class="iconis col-3"><span class="material-icons-round">home</span><p> ${inmueble.squareMetersBuilt}m²</p></div>
     <div class="iconis col-3"><span class="material-icons-round">area_chart</span><p> ${inmueble.squareMeters}m²</p></div></div>`
 
-
+        let gastosComunes = inmueble.expenses;
+        if (gastosComunes == 0) {
+            gastosComunes = "No tiene gastos comunes";
+        }
+        else {
+            gastosComunes;
+        }
         ininfo =
             `
             <div class="row">
