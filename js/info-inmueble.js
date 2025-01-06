@@ -75,7 +75,7 @@ function infoInmueble(inmueble) {
                                             <tr><th></th><td class= "col-6 px-3">Departamento:</td><td>${inmueble.departament}</td></tr>
                                             <tr><th></th><td class= "col-6 px-3">Localidad:</td><td>${inmueble.location}</td></tr>
                                             <tr><th></th><td class= "col-6 px-3">Calles:</td><td>${inmueble.streets}</td></tr>
-                                            <tr><th></th><td class= "col-6 px-3">Gastos comunes:</td><td>$${inmueble.expenses}</td></tr>
+                                            <tr><th></th><td class= "col-6 px-3">Gastos comunes:</td><td>$${gastosComunes}</td></tr>
                                             <tr><th></th><td class= "col-6 px-3">Garantías:</td><td>${inmueble.guarantee}</td></tr>
                                         </tbody>
                                     </table>   
